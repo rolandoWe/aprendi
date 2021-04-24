@@ -1,0 +1,150 @@
+
+@media(max-width:900px){
+    .logo{
+        /* width:90%; */
+        left:1%
+    }
+    .nav_ul{
+        margin-right:10%
+    }
+}
+@media (max-width:750px) {
+    .header_description{
+        height:150px
+    }
+    .header_information{
+        width:400px;
+        top:250px
+    }
+    .banner p{
+        font-size:25px
+    }
+    .seccion_cont{
+        flex-direction: column;
+    }
+    .seccion_uno,.seccion_dos{
+        width:90%
+    }
+    .cuerpo{
+        flex-direction: column;
+    }
+    .cuerpo_uno{
+        flex-direction: column;
+        width:90%
+    }
+    .reloj{
+        width:250px;
+        height:150px
+    }
+    .cuerpo_uno p{
+        width:90%
+    }
+    .cuerpo_dos{
+        width:90%
+    }
+    .contenedor_img h3{
+        width:100%
+    }
+}
+@media (max-width:650px) {
+    .nav_ul{
+        position: fixed;
+        flex-direction: column;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        background-color: forestgreen;
+        overflow: scroll;
+        transform: translate(220%);
+    }
+    .mostrar_nav{
+        transform: translate(0%);
+
+    }
+    .cerrar_nav{
+        display: block;
+    }
+    .nav_ul li{
+        left:-20%;
+    }
+    .nav>ul>li{
+        width:200px
+
+    }
+    .nav ul li ul{
+        left:100px
+    }
+    .logo{
+        left:-200px
+    }
+    .menu{
+        position: absolute;
+        display: block;
+        right: 100px;
+    }
+    .header_description{
+        height:150px;
+        width:250px
+    }
+    .junior{
+        left:100px
+    }
+    .header_description p, .hp{
+     font-size: 20px;
+     margin: 0px;
+    }
+    .header_redes{
+        left:75%;
+        bottom: 300px;
+    }
+    .contenedor_footer footer{
+        width:100%
+    }
+    footer i{
+        width:100%;
+        font-size: 15px;
+    }
+
+}
+@media (max-width:500px) {
+    .logo{
+        left:-20%
+    }
+    .header_redes{
+        left:70%
+    }
+    .banner p{
+        font-size: 18px;
+    }
+}
+@media (max-width:390px) {
+    .header_redes{
+        height: 100px;
+        width:50px;
+        top:200px;
+        left:80%;
+        flex-direction: column;
+    }
+    .header_information{
+        left:2%
+    }
+    .cont_img{
+        width:90%;
+        height:200px
+    }
+    .cont_img img{
+        width:100%;
+        height:140px
+    }
+    .logo{
+        left:-30%
+    }
+    .menu{
+        right:10%
+
+    }
+    .light_img{
+        width:100%
+    }
+}
