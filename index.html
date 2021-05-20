@@ -4,85 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css?0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css?0.1">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <link rel="stylesheet" href="reloj/reloj.html">
-    <link rel="stylesheet" href="mediaQuery.css">
+    <link rel="stylesheet" href="mediaQuery.css?0">
 <script src="scrollreveal.js"></script>
 
     <title>rolandoWe</title>
 </head>
 <body>
     <div class="contenedor">
-        <main class="main">
+    <main class="main">      
             <nav class="nav">
                 <div class="logo">
-                   <p>R</p>
+                  <p>R</p>    
                 </div>
                 <ul class="nav_ul">
                     <span class="cerrar_nav">X</span>
-                    <li>Azár
+                    <li>Menú
                         <ul>
-                           <li><a href="https://www.jps.go.cr/productos/loteria-nacional">Lotería</a></li>
-                           <li><a href="https://www.jps.go.cr/productos/chances">Chances</a></li>
-                           <li><a href="https://www.jps.go.cr/productos/nuevos-tiempos">Nuevos Tiempos</a></li>
-                           <li><a href="https://www.jps.go.cr/productos/lotto">Lotto</a></li>
+                           <li class="enlace"><a href="index.html">Inicio</a></li>
+                           <li class="enlace"><a href="#banner">Banner</a></li>
+                           <li class="enlace"><a href="#software">Sóftwares</a></li>
+                           <li class="enlace"><a href="#suerte">Azár</a></li>
                         </ul>
                     </li>
                     <li>Seccion
                        <ul>
-                          <li><a href="#galeria">Galeria</a></li>
-                          <li><a href="#footer">Footer</a></li>
-                          <li><a href="#">hr</a></li>
+                          <li class="enlace"><a href="#">Suerte</a></li>
+                          <li class="enlace"><a href="#footer">Footer</a></li>
+                          <li class="enlace"><a href="paginas/videos.html">Videos</a></li>
                        </ul>
                     </li>
-                    <li>Item_tres
+                    <li>Portafolio
                         <ul>
-                            <li><a href="#">l</a></li>
-                            <li><a href="#">l</a></li>
-                            <li><a href="#">l</a></li>
+                            <li class="enlace"><a href="#">l</a></li>
+                            <li class="enlace"><a href="#">l</a></li>
+                            <li class="enlace"><a href="#">l</a></li>
                         </ul>
                     </li>
-                    <li>Empleos 
-                        <ul>
-                            <li><a href="#">hh</a></li>
-                            <li><a href="#">hh</a></li>
-                            <li><a href="#">hh</a></li>
-                            <li><a href="#">hh</a></li>
-                            <li><a href="#">hh</a></li>
-                            <li><a href="#">h4</a></li>
-                        </ul>
-                    </li>
+                    <!-- <i class="fas fa-home casa"></i> -->
                 </ul>
                 <div class="menu">Menú</div>
             </nav>
-        </main>
+    </main>
 <!------------------------- HEADER -------------------------->
 <div class="contenedor_header">
-    <div class="header_description">
-        <span class="hp">Rolando Rivera.</span >
-        <p>Desarrollador Web.</p>
-        <p>Desarrollador de Sóftware.</p>
-        <p class="junior"> <mark>Junior</mark></p>
-    </div>
+    <!-- <div class="header_description">
+        <h1>Dale vida y existencia a tu negocio o empresa.</h1 >
+        <h1>Ponlo en internet.</h1>
+        <h1>Si no está en internet.</h1>
+        <h1>No existe.</h1>
+    </div> -->
     <div class="header_redes">
-       <span class="tt"> <i class="icon-twitter1 twitter" style="color:rgb(40, 255, 230)"></i></span>
+       <a href="#"><i class="fab fa-twitter twitter"></i></a>
 
         <a href="https://www.facebook.com/rolandoRivera85">
-            <i class="icon-facebook facebook" ></i></a>
+            <i class="fab fa-facebook facebook"></i>
+            
+        </a>
     </div>
     <div class="header_information">
         <div class="img">
-        <img src="imagenes/rolo_navidad.jpg" alt="">
+        <img src="imagenes/rolando.png" alt="">
+        <div class="cara_img"></div>
         </div>
-        <p class="hpp">Soy Rolando Rivera.</p>
+        <span class="hpp">Rolando Rivera.</span>
         <p>Programador y desarrollador web.</p>
-        <p>Con conocimientos en: HTML, CSS y Javascript.</p>
+        <p>Desarrollador de Sóftware y Aplicaciónes web.</p>
         
     </div>
 </div>
 <!-------------------------- BANNER ------------------------->
-<div class="banner">
+<div class="banner" id="banner">
     <p class="pa_uno">Tienes en mente algún proyecto?.</p>
     <p class="pa_dos">Que tal si trabajamos juntos.</p>
     <p class="pa_tres">Y caminamos de la mano rumbo al éxito.</p>
@@ -91,27 +85,39 @@
 <!-------------------------- PRIMERA SECCION --------------------------->
 <div class="seccion_cont">
     <div class="seccion_uno">
-        <h4>Mas vale tarde que nunca.</h4>
-        <p>No se si tarde pero he logrado descubrir esta pasión por la tecnología, actualmente me
-           encuentro estudiando programacion y desarrollo web. Ya tengo mucho conocimiento en 
-        HTML, CSS y lo que es el lenguaje de programación Javascript.</p>
+     <!-- <img src="imagenes/laptop2.png" alt=""> -->
+     <div class="conocimientos">
+         <h3>Habilidades.</h3>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Bootstrap</li>
+      <li>Java</li>
+      <li>PHP</li>
+     </div>
+ 
     </div>
+    <hr class="cuerpo_hr">
     <div class="seccion_dos">
-        <h4>Así empezé.</h4>
-        <p>Soy aficionado a los video juegos y pues todo inició ahi, pensé en crear mi propio 
-            video juego. Por lo tanto empezé a averiguar como se hacian y me di cuenta que se tiene que 
-            aprender a programar.<br> Y seguí y seguí investigando hasta que me di a la tarea de aprender 
-            el lenguaje Java, pero como que no le entendia mucho, luego descubri javascript y pues me 
-            terminó gustando mucho y me era un poco mas entendible.<br> Y asi pues me terminé inclinando
-            mas por el desarrollo web que por los video juegos.<br><br> Javascript es uno de los lenguajes de programación
-            que mas se usa en el desarrollo de Páginas y Sitios Web.
-        </p>
+        <div class="servicios">
+        <h3>Servicios.</h3>
+            <li>Desarrollo web.</li>
+            <li>Desarrollo de Software.</li>
+            <li>Desarrollo de aplicaciónes web</li>
+            <!-- <li></li> -->
+            <!-- <li></li> -->
+        </div>
+        <!-- <div class="servicios_img">
+            <img src="../BancoDeImagenes/desarrollo-de-software.png" alt="">
+        </div> -->
+       
     </div>
 
 </div>
 <!-- ----------------------cuerpo--------------------- -->
 <hr class="cuerpo_hr">
-<div class="cuerpo">
+
+<div class="cuerpo" id="software">
     <div class="cuerpo_uno">
         <div class="reloj">
            <a href="reloj/reloj.html"><img src="imagenes/reloj.png" alt=""></a> 
@@ -129,101 +135,74 @@
             Esfuerzate por que es algo muy fundamental para lograr el éxito.
         </p>
     </div>
+    <div class="cono"></div>
 
 </div>
 
 <!-- +++++++++++++++++++++++++++GALERIA DE IMAGENES++++++++++++++++++ -->
-
-<div class="contenedor_img" id="galeria">
-    <h3>Mi Galeria de Imagenes.</h3>
+<hr class="cuerpo_hr">
+<div class="contenedor_img" id="suerte">
+    <h3>Un espacio para la fortuna.</h3>
     <div class="imagenes">
+
         <div class="cont_img">
-            <h4>imagen uno</h4>
+            <!-- <h4>imagen uno</h4> -->
             <div class="imagen">
-                <img src="imagenes/164452085_788826112071747_3848888537595044780_n.jpg" alt=""class="fot">
+               <a href="https://www.jps.go.cr/productos/chances"><img src="imagenes/logo_chances.png" alt=""class="fot"></a> 
             </div>
-            <p>prueba</p>
+           <a href="https://www.jps.go.cr/productos/chances" class="parrafo"><p>Chances.</p> </a> 
         </div>
         <div class="cont_img">
-            <h4>imagen dos</h4>
+            <!-- <h4>imagen uno</h4> -->
             <div class="imagen">
-                <img src="imagenes/photo-manipulation-1825450_1920.jpg" alt=""class="fot">
+                <a href="https://www.jps.go.cr/productos/lotto"><img src="imagenes/lotto.png" alt=""class="fot"></a>
             </div>
-            <p>prueba</p>
+            <a href="https://www.jps.go.cr/productos/lotto" class="parrafo"><p>Lótto.</p></a> 
         </div>
         <div class="cont_img">
-            <h4>imagen tres</h4>
+            <!-- <h4>imagen uno</h4> -->
             <div class="imagen">
-                <img src="imagenes/programador.jpg" alt=""class="fot">
+                <a href="https://www.jps.go.cr/productos/nuevos-tiempos"><img src="imagenes/tiempos.png" alt=""class="fot"></a>
             </div>
-            <p>prueba</p>
+            <a href="https://www.jps.go.cr/productos/nuevos-tiempos" class="parrafo"><p>Nuevos Tiémpos.</p></a> 
         </div>
         <div class="cont_img">
-            <h4>imagen cuatro</h4>
+            <!-- <h4>imagen uno</h4> -->
             <div class="imagen">
-                <img src="imagenes/rolo_navidad.jpg" alt=""class="fot">
+               <a href="https://www.jps.go.cr/productos/loteria-nacional"> <img src="imagenes/loteria_nacional.png" alt=""class="fot"></a>
             </div>
-            <p>prueba</p>
+            <a href="https://www.jps.go.cr/productos/loteria-nacional" class="parrafo"><p>Loteria Nacional.</p> </a> 
         </div>
-        <div class="cont_img">
-            <h4>imagen cinco</h4>
-            <div class="imagen">
-                <img src="imagenes/running-watch-1246430_1280.png" alt=""class="fot">
-            </div>
-            <p>prueba</p>
-        </div>
-        <div class="cont_img">
-            <h4>imagen seis</h4>
-            <div class="imagen">
-                <img src="imagenes/work-731198_1920.jpg" alt=""class="fot">
-            </div>
-            <p>prueba</p>
-        </div>
-        <div class="cont_img">
-            <h4>imagen siete</h4>
-            <div class="imagen">
-                <img src="imagenes/reloj.png" alt=""class="fot">
-            </div>
-            <p>prueba</p>
-        </div>
-        <div class="cont_img">
-            <h4>imagen ocho</h4>
-            <div class="imagen">
-                <img src="imagenes/programador.jpg" alt=""class="fot">
-            </div>
-            <p>prueba</p>
-        </div>
-        <div class="cont_img">
-            <h4>imagen nueve</h4>
-            <div class="imagen">
-                <img src="imagenes/164452085_788826112071747_3848888537595044780_n.jpg" 
-                alt=""class="fot">
-            </div>
-            <p>prueba</p>
-        </div>
+
     </div>
 
 </div>
 
-<div class="contenedor_light">
-    <i class="fas fa-times cerrar_light"></i>
-    <div class="light_img">
-        <img src="imagenes/reloj.png" alt="" class="ver">
-    </div>
-</div>
 
-
-
+<!-- footer -->
 <div class="contenedor_footer" id="footer">
-    <footer>
-      <i><img src="imgenes_svg/bx-copyright.svg" alt=""> Copyright 2021  Desarrollado por:<span> Rolando Rivera</span> </i>
+    <footer class="footer">
+        <div class="footer_contacto">
+            <h3>Contacto</h3>
+            <a href="https://www.facebook.com/rolandoRivera85">
+            <i class="fab fa-facebook facebook"> Facebook</i></a><br>
+            <i class="fab fa-twitter facebook"> Twitter</i>
+        </div>
+        <div class="footer_copyright">
+            <span>Hecho con </span><i class="fas fa-heart"></i><span> y </span><i class="fas fa-coffee"></i>
+            <span>en La Lima, Cartago, Costa Rica.</span>
+        </div>
+        <div class="copy">
+            Copyright: <a href="https://www.facebook.com/rolandoRivera85">Rolando rivera</a>
+        </div>
     </footer>
 </div>
+<figure></figure>
 </div>
 
 
 <!-- <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script> -->
-<script src="index_scroll_reveal.js"></script>
+<!-- <script src="index_scroll_reveal.js"></script> -->
 
 <script src="https://kit.fontawesome.com/f7f35171d9.js" crossorigin="anonymous"></script>
 
