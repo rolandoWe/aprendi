@@ -5,16 +5,26 @@
         left:1%
     }
     .nav_ul{
-        margin-right:10%
+        margin-right:0%
+    }
+    .servicios{
+        width:50%
+    }
+    .footer_copyright{
+        width:60%
     }
 }
 @media (max-width:750px) {
-    .header_description{
-        height:150px
+    .nav>ul>li{
+        font-size: 18px;
+    }
+    .nav ul li a{
+        font-size: 18px;
+
     }
     .header_information{
         width:400px;
-        top:250px
+        top:150px
     }
     .banner p{
         font-size:25px
@@ -23,7 +33,11 @@
         flex-direction: column;
     }
     .seccion_uno,.seccion_dos{
-        width:90%
+        width:100%
+    }
+    .servicios{
+        width:60%;
+        left:10%
     }
     .cuerpo{
         flex-direction: column;
@@ -40,7 +54,7 @@
         width:90%
     }
     .cuerpo_dos{
-        width:90%
+        width:50%
     }
     .contenedor_img h3{
         width:100%
@@ -53,10 +67,11 @@
         top: 0;
         left: 0;
         height: 100vh;
-        width: 100vw;
-        background-color: forestgreen;
+        width: 100%;
+        background-color: rgb(0, 0, 0);
         overflow: scroll;
-        transform: translate(220%);
+        transform: translate(-200%);
+        transition: 1s;
     }
     .mostrar_nav{
         transform: translate(0%);
@@ -87,64 +102,155 @@
         height:150px;
         width:250px
     }
-    .junior{
-        left:100px
-    }
+
     .header_description p, .hp{
      font-size: 20px;
      margin: 0px;
     }
+    .header_information{
+        left:20%
+    }
     .header_redes{
-        left:75%;
-        bottom: 300px;
+        left:90%;
+        bottom: 200px;
+        height: 100px;
+        width:50px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .conocimientos{
+        width:80%;
+        right:5%
+    }
+    .servicios{
+        left: 25%;
+        width:70%
+    }
+    .cont_img{
+        width:200px;
+        /* height:250px */
     }
     .contenedor_footer footer{
         width:100%
     }
-    footer i{
-        width:100%;
-        font-size: 15px;
+    footer {
+        flex-direction: column;
+    }
+    .footer_contacto{
+        width:90%
+    }
+    .footer_copyright{
+        width:90%
     }
 
 }
 @media (max-width:500px) {
     .logo{
-        left:-20%
+        left:-25%
     }
-    .header_redes{
+    .header_information{
+        left:7%
+    }
+    /* .header_redes{
         left:70%
-    }
+    } */
     .banner p{
         font-size: 18px;
     }
+    .conocimientos{
+        width:95%;
+        left:0%
+    }
+    .servicios{
+        width:90%;
+        left:2%
+    }
+    .cuerpo_dos{
+        width:80%;
+        left:1%
+    }
+    .contenedor_img h3{
+        font-size: 20px;
+    }
+    .imagenes{
+        /* background: blue; */
+        width: 100%;
+    }
+    .cont_img{
+        width:220px;
+        margin: 0;
+    }
+    .imagen{
+        width:120px;
+        height: 120px;
+    }
+
 }
 @media (max-width:390px) {
+    .logo{
+        left:-30%
+    }
+    .menu{
+        right:10%
+    }
     .header_redes{
         height: 100px;
         width:50px;
-        top:200px;
-        left:80%;
+        /* top:200px; */
+        left:79%;
         flex-direction: column;
     }
     .header_information{
-        left:2%
+        left:0%;
+        width:95%;
+        /* height: 240px; */
+        /* background: red; */
     }
     .cont_img{
-        width:90%;
+        width:100%;
         height:200px
     }
     .cont_img img{
         width:100%;
         height:140px
     }
-    .logo{
-        left:-30%
+    .seccion_dos{
+        background: blue;
+        width: 100%;
     }
-    .menu{
-        right:10%
+    .contenedor_img h3{
+        font-size: 18px;
+    }
+.servicios{
+    left: 0%;
+    width: 100%;
+}
+.servicios li{
+    font-size: 18px;
+    list-style: none;
 
-    }
-    .light_img{
+}
+.cuerpo_uno{
+    flex-direction: column;
+    margin-left: 0;
+    width:100%
+}
+.reloj{
+    width:100%
+}
+.footer_copyright span{
+    font-size: 15px;
+}
+    /* pagina videos */
+    .videos{
         width:100%
     }
+    .vi{
+        width:80%
+    }
+
+    /* .light_img{
+        width:100%
+    } */
 }
