@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El DOM</title>
+
+    <!-- <link rel="stylesheet" href="../../index.css"> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">  -->
+
+    <link rel="stylesheet" href="j-s.css">
+    <!-- <link rel="stylesheet" href="../../index.css"> -->
+
+    <link rel="stylesheet" href="../../mediasQuery.css?v">
+    <link rel="stylesheet" href="../../index.css?v">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:ital@1&display=swap" rel="stylesheet">
+
+
+    <!-- <link rel="stylesheet" href="../../index.css"> -->
+
+
+</head>
+<body>
+    <div class="conte">
+        <div class="cont_dom">
+            <main class="main">
+                <nav class="nav ">
+                    <div class="logo">
+                        <!-- <p class="logoP1">Campo<span class="logoP2">Tecnológico</span></p> -->
+                        <p><span class="R">R</span>o<span class="W">L</span>o</p>
+                    </div>
+                    <ul class="ul">
+                        <span class="close">X</span>
+                        <li><a href="##">Menús</a>
+                          <ul>
+                            <li><a href="../../index.html">Principal</a></li>
+                              <li><a href="../hobby/papalote/papalote.html">Papalóte</a></li>
+                              <li><a href="../hobby/reloj/reloj.html">Reloj</a></li>
+                              <li><a href="#">Calculadora</a></li>
+                             </ul>
+                          </li>
+                        <li><a href="##">Seccion</a>
+                          <ul>
+                              <li><a href="#header">Inicio</a></li>
+                              <li><a href="#reemplazar">Reemplazar contenido</a></li>
+                              <li><a href="#insertar">Insertar elementos</a></li>
+                              <li><a href="#eliminar">Eliminar elementos</a></li>
+                              <li><a href="#footer">Footer</a></li>
+                             </ul></li>
+                        <li><a href="##">Cursos</a>
+                           <ul>
+                            <li><a href="#">HTML</a></li>
+                            <li><a href="#">CSS</a></li>
+                            <li><a href="#">Javascript</a></li>
+                            <!-- <li><a href="#">seccion_4----jkj kk</a></li> -->
+                           </ul>
+                        </li>
+                        <li><a href="##">contacto</a></li>
+                    </ul>
+                    <div class="menu">
+                        <img src="../../imagenesSVG/bars-solid.svg" alt="">
+                    </div>
+                </nav>
+              </main>
+              <!-- -------------------HEADER------------------ -->
+              <header class="header" id="header">
+                  <div class="perfil">
+                      <div class="perf_text">
+                          <h2>Javascript</h2>
+                           <p>Las propiedades del DOM.</p>
+                      </div>
+                      <button class="perfil_btn">Mas Informacion</button>
+                  </div>
+              </header>
+            <div class="elDom">
+                <h3 class="h3">En este articulo vamos a ver tres categorías del DOM</h3>
+                 <ul>
+                    <li>Reemplazar contenido de elementos en el Dom</li>
+                    <li>Incertar elementos en el Dom</li>
+                    <li>Eliminar elementos en el Dom</li>
+                 </ul>
+    
+    
+                <h1 class="h1" id="reemplazar">Reemplazar contenido </h1>
+                <p>Comenzaremos por la familia de propiedades siguientes, que enmarcamos dentro de la categoría de reemplazar contenido de elementos HTML. Se trata de una vía rápida con la cuál podemos añadir (o más bien, reemplazar) el contenido de una etiqueta HTML.</p>
+                <p>Las propiedades son las siguientes:</p>
+                <table class="tabla">
+                    <tr>
+                        <th>propiedades</th>
+                        <th>Descripción</th>
+                    </tr>
+                    <tr>
+                        <td><button type="button">STRING</button> .nodeName</td>
+                        <td>Devuelve el nombre del nodo (etiqueta si es un elemento HTML). Sólo lectura.</td>
+                    </tr>
+                    <tr>
+                        <td><button type="button">STRING</button> .textContent</td>
+                        <td>Devuelve el contenido de texto del elemento. Se puede asignar para modificar.</td>
+                    </tr>
+                    <tr>
+                        <td><button type="button">STRING</button>.innerHTML</td>
+                        <td>Devuelve el contenido HTML del elemento. Se puede usar asignar para modificar.</td>
+                    </tr>
+                    <tr>
+                        <td><button type="button">STRING</button>.outerHTML</td>
+                        <td>Idem a .innerHTML pero incluyendo el HTML del propio elemento HTML.</td>
+                    </tr>
+                    <tr>
+                        <td><button type="button">STRING</button>.innerText</td>
+                        <td>Versión no estándar de .textContent de Internet Explorer con diferencias. Evitar.</td>
+                    </tr>
+                    <tr>
+                        <td><button type="button">STRING</button>.outerText</td>
+                        <td>Versión no estándar de .textContent/.outerHTML de Internet Explorer. Evitar.</td>
+                    </tr>
+                </table>
+                <p>La propiedad nodeName nos devuelve el nombre del todo, que en elementos HTML es interesante puesto que nos devuelve el nombre de la etiqueta en mayúsculas. Se trata de una propiedad de sólo lectura, por lo cuál no podemos modificarla, sólo acceder a ella.</p>
+                <h3 class="h3">La propiedad textContent</h3>
+                <p>La propiedad .textContent nos devuelve el contenido de texto de un elemento HTML. Es útil para obtener (o modificar) sólo el texto dentro de un elemento, obviando el etiquetado HTML:</p>
+                <pre class="ejemplo">
+                    <code>
+                        const div = document.querySelector("div");  // &lt;div>&lt;/div>
+    
+                            div.textContent = "Hola a todos"; // &lt;div>Hola a todos&lt;/div>
+                            div.textContent;  // "Hola a todos"
+                    </code>
+    
+                </pre>
+                <p>Observa que también podemos utilizarlo para reemplazar el contenido de texto, asignándolo como si fuera una variable o constante. En el caso de que el elemento tenga anidadas varias etiquetas HTML una dentro de otra, la propiedad .textContent se quedará sólo con el contenido textual completo, como se puede ver en el siguiente ejemplo:</p>
+                <pre class="ejemplo">
+                    <code>
+ // Obtenemos &lt;div class="info">Hola <strong>amigos</strong>&lt;/div>
+     const div = document.querySelector(".info");
+     
+     div.textContent;  // "Hola amigos"
+                    </code>
+    
+                </pre>
+                <h3 class="h3">La propiedad innerHTML</h3>
+                <p>Por otro lado, la propiedad .innerHTML nos permite hacer lo mismo, pero interpretando el código HTML indicado y renderizando sus elementos:</p>
+                <pre class="ejemplo">
+                    <code>
+ const div = document.querySelector(".info"); // <div class="info"></div>
+ div.innerHTML = "<strong>Importante</strong>"; // Interpreta el HTML
+div.innerHTML;  // "<strong>Importante</strong>"
+ div.textContent;  // "Importante"
+                    
+div.textContent = "<strong>Importante</strong>";  // No interpreta el HTML
+                    </code>
+    
+                </pre>
+                <p>Observa que la diferencia principal entre .innerHTML y .textContent es que el primero renderiza e interpreta el marcado HTML, mientras que el segundo lo inserta como contenido de texto literalmente.</p>
+                <div class="nota">
+                    <p>Ten en cuenta que la propiedad .innerHTML comprueba y parsea el marcado HTML escrito (corrigiendo si hay errores) antes de realizar la asignación. Por ejemplo, si en el ejemplo anterior nos olvidamos de escribir el cierre </strong> de la etiqueta, .innerHTML automáticamente lo cerrará. Esto puede provocar algunas incongruencias si el código es incorrecto o una disminución de rendimiento en textos muy grandes que hay que preprocesar.</p>
+                </div>
+                <p>Por otro lado, la propiedad .outerHTML es muy similar a .innerHTML. Mientras que esta última devuelve el código HTML del interior de un elemento HTML, .outerHTML devuelve también el código HTML del propio elemento en cuestión. Esto puede ser muy útil para reemplazar un elemento HTML combinándolo con .innerHTML:</p>
+                <pre class="ejemplo">
+                    <code>
+                        const data = document.querySelector(".data");
+                            data.innerHTML = "&lt;h1>Tema 1&lt;/h1>";
+                            
+                            data.textContent;   // "Tema 1"
+                            data.innerHTML;     // "&lt;h1>Tema 1&lt;/h1>"
+                            data.outerHTML;     // "&lt;div class="data">&lt;h1>Tema 1&lt;/h1>&lt;/div>"
+                    </code>
+    
+                </pre>
+                <p>En este ejemplo se pueden observar las diferencias entre las propiedades .textContent (contenido de texto), .innerHTML (contenido HTML) y .outerHTML (contenido y contenedor HTML).</p>
+                <div class="nota">
+                    <p>Las propiedades .innerText y .outerText son propiedades no estándar de Internet Explorer. Se recomienda sólo utilizarlas con motivos de fallbacks o para dar soporte a versiones antiguas de Internet Explorer. En su lugar debería utilizarse .textContent.</p>
+                </div>
+    
+          <!-- ************************************************** -->
+                <h1 class="h1" id="insertar">Insertar elementos</h1>
+    
+                <p>A pesar de que los métodos anteriores son suficientes para crear elementos y estructuras HTML complejas, sólo son aconsejables para pequeños fragmentos de código o texto, ya que en estructuras muy complejas (con muchos elementos HTML) la legibilidad del código sería menor y además, el rendimiento podría resentirse</p>
+                <p>Hemos aprendido a crear elementos HTML y sus atributos, pero aún no hemos visto como añadirlos al documento HTML actual (conectarlos al DOM), operación que se puede realizar de diferentes formas mediante los siguientes métodos disponibles:</p>
+    
+                <table class="tabla">
+                    <tr>
+                        <th>Métodos</th>
+                        <th>Descripción</th>
+                    </tr>
+                    <tr> 
+                        <td><button type="button">Node</button>.appendChild(node)</td>
+                        <td>Añade como hijo el nodo node. Devuelve el nodo insertado.</td>
+                    </tr>
+                    <tr> 
+                        <td><button type="button">ELEMENT</button> .insertAdjacentElement(pos, elem)</td>
+                        <td>Inserta el elemento elem en la posición pos. Si falla, <button type="button">NULL</button>.</td>
+                    </tr>
+                    <tr> 
+                        <td><button type="button">Undefined</button>.insertAdjacentHTML(pos, str)</td>
+                        <td>Inserta el código HTML str en la posición pos.</td>
+                    </tr>
+                    <tr> 
+                        <td><button type="button">Undefined</button>.insertAdjacentText(pos, text)</td>
+                        <td>Inserta el texto text en la posición pos.</td>
+                    </tr>
+                    <tr> 
+                        <td><button type="button">Node</button>.insertBefore(new, node)</td>
+                        <td>Inserta el nodo new antes de node y como hijo del nodo actual.</td>
+                    </tr>
+                </table>
+    
+                <p>De ellos, probablemente el más extendido es .appendChild(), no obstante, la familia de métodos .insertAdjacent*() también tiene buen soporte en navegadores y puede usarse de forma segura en la actualidad.</p>
+    
+                <h3 class="h3">El método appendChild()</h3>
+    
+                <p>Uno de los métodos más comunes para añadir un elemento HTML creado con Javascript es appendChild(). Como su propio nombre indica, este método realiza un «append», es decir, inserta el elemento como un hijo al final de todos los elementos hijos que existan.</p>
+                <p>Es importante tener clara esta particularidad, porque aunque es lo más común, no siempre querremos insertar el elemento en esa posición:</p>
+    
+                <pre class="ejemplo">
+                    <code>
+                        const img = document.createElement("img");
+                            img.src = "https://lenguajejs.com/assets/logo.svg";
+                            img.alt = "Logo Javascript";
+                            
+                            document.body.appendChild(img);
+                    </code>
+    
+                </pre>
+                <p>En este ejemplo podemos ver como creamos un elemento <img> que aún no está conectado al DOM. Posteriormente, añadimos los atributos src y alt, obligatorios en una etiqueta de imagen. Por último, conectamos al DOM el elemento, utilizando el método .appendChild() sobre document.body que no es más que una referencia a la etiqueta <body> del documento HTML.</p>
+                <p>Veamos otro ejemplo:</p>
+                <pre class="ejemplo">
+                    <code>
+                        const div = document.createElement("div");
+                            div.textContent = "Esto es un div insertado con JS.";
+                            
+                            const app = document.createElement("div"); // &lt;div>&lt;/div>
+                            app.id = "app"; // &lt;div id="app">&lt;/div>
+                            app.appendChild(div); // &lt;div id="app">&lt;div>Esto es un div insertado con JS&lt;/div>&lt;/div>
+                    </code>
+     
+                    </pre>
+                <p>En este ejemplo, estamos creando dos elementos, e insertando uno dentro de otro. Sin embargo, a diferencia del anterior, el elemento app no está conectado aún al DOM, sino que lo tenemos aislado en esa variable, sin insertar en el documento. Esto ocurre porque app lo acabamos de crear, y en el ejemplo anterior usabamos document.body que es una referencia a un elemento que ya existe en el documento.</p>
+    
+                <h3 class="h3">Los métodos insertAdjacent*() </h3>
+                <p>Los métodos de la familia insertAdjacent son bastante más versátiles que .appendChild(), ya que permiten muchas más posibilidades. Tenemos tres versiones diferentes:</p>
+    
+                <ul>
+                    <li>.insertAdjacentElement() donde insertamos un objeto <button type="button">ELEMENT</button></li>
+                    <li>.insertAdjacentHTML() donde insertamos código HTML directamente (similar a innerHTML)</li>
+                    <li>.insertAdjacentText() donde no insertamos elementos HTML, sino un <button type="button">NODE</button>  con texto</li>
+                </ul>
+    
+                <p>En las tres versiones, debemos indicar por parámetro un <button type="button">STRING</button>  pos como primer parámetro para indicar en que posición vamos a insertar el contenido. Hay 4 opciones posibles:</p>
+                <ul>
+                    <li>beforebegin: El elemento se inserta antes de la etiqueta HTML de apertura.</li>
+                    <li>afterbegin: El elemento se inserta dentro de la etiqueta HTML, antes de su primer hijo.</li>
+                    <li>beforeend: El elemento se inserta dentro de la etiqueta HTML, después de su último hijo. Es el equivalente a usar el método .appendChild().</li>
+                    <li>afterend: El elemento se inserta después de la etiqueta HTML de cierre.</li>
+                </ul>
+                <p>Veamos algunos ejemplo aplicando cada uno de ellos con el método .insertAdjacentElement():</p>
+                <pre class="ejemplo">
+                    <code>
+                            const div = <span class="amarillo">document.createElement </span>("div");  // &lt;div&gt;&lt;/div&gt;
+                            div.textContent = "Ejemplo";                // &lt;div&gt;Ejemplo&lt;/div&gt;
+    
+                            const app = document.querySelector("#app"); // &lt;div id="app"&gt;App&lt;/div&gt;
+    
+                            app.insertAdjacentElement("beforebegin", div);
+                            // Opción 1: &lt;div&gt;Ejemplo&lt;/div&gt; &lt;div id="app"&gt;App&lt;/div&gt;
+    
+                            app.insertAdjacentElement("afterbegin", div);
+                            // Opción 2: &lt;div id="app"&gt; &lt;div&gt;Ejemplo&lt;/div&gt; App&lt;/div&gt;
+    
+                            app.insertAdjacentElement("beforeend", div);
+                            // Opción 3: &lt;div id="app"&gt;App &lt;div&gt;Ejemplo&lt;/div&gt; &lt;/div&gt;
+    
+                            app.insertAdjacentElement("afterend", div);
+                            // Opción 4: &lt;div id="app"&gt;App&lt;/div&gt; &lt;div&gt;Ejemplo&lt;/div&gt;
+                    </code>
+     
+                </pre>
+                <p>Ten en cuenta que en el ejemplo muestro varias opciones alternativas, no lo que ocurriría tras ejecutar las cuatro opciones una detrás de otra.</p>
+                <p>Por otro lado, notar que tenemos tres versiones en esta familia de métodos, una que actua sobre elementos HTML (la que hemos visto), pero otras dos que actuan sobre código HTML y sobre nodos de texto. Veamos un ejemplo de cada una:</p>
+                <pre class="ejemplo">
+                    <code>
+                        app. <span class="amarillo">insertAdjacentElement</span>(<span class="verde">"beforebegin"</span>, div);
+                       // Opción 1: <span class="azul"> &lt;div&gt;</span>Ejemplo<span class="azul">&lt;/div&gt;</span> &lt;div id="app"&gt;App&lt;/div&gt;
+                        
+                        app. <span class="amarillo">insertAdjacentHTML</span> (<span class="verde">"beforebegin"</span> , '&lt;p>Hola&lt;/p>');
+                        // Opción 2: &lt;p>Hola&lt;/p> &lt;div id="app"> App &lt;/div>
+                        
+                        app. <span class="amarillo">insertAdjacentText</span> (<span class="verde">"beforebegin"</span>, "Hola a todos");
+                        // Opción 3: Hola a todos &lt;div id="app">App&lt;/div>
+    
+                    </code>
+                </pre>
+    
+                <h3 class="h3"> El método insertBefore() </h3>
+                    <p>Por último, el método insertBefore(newnode, node) es un método más específico y menos utilizado en el que se puede especificar exactamente el lugar a insertar un nodo. El parámetro newnode es el nodo a insertar, mientras que node puede ser:</p>
+    
+                    <ul>
+                        <li> <button type="button">NULL</button>; insertando newnode después del último nodo hijo. Equivalente a .appendChild().</li>
+                        <li><button type="button">NODE</button> o <button type="button">ELEMENT</button> ; insertando newnode antes de dicho node de referencia.</li>
+                    </ul>
+    
+                    <h1 class="h1" id="eliminar">Eliminar elementos</h1>
+    
+                    <p>Al igual que podemos insertar o reemplazar elementos, también podemos eliminarlos. Ten en cuenta que al «eliminar» un nodo o elemento HTML, lo que hacemos realmente no es borrarlo, sino desconectarlo del DOM o documento HTML, de modo que no están conectados, pero siguen existiendo.</p>
+    
+                    <h3 class="h3">El método remove()</h3>
+    
+                    <p>Probablemente, la forma más sencilla de eliminar nodos o elementos HTML es utilizando el método .remove() sobre el nodo o etiqueta a eliminar:</p>
+    
+                    <pre class="ejemplo">
+                        <code>
+                            const div = document.querySelector(".deleteme");
+    
+                            div.isConnected;    // true
+                            div.remove();
+                            div.isConnected;    // false
+                        </code>
+                    </pre>
+    
+                    <p>En este caso, lo que hemos hecho es buscar el elemento HTML &lt;div class="deleteme"> en el documento HTML y desconectarlo de su elemento padre, de forma que dicho elemento pasa a no pertenecer al documento HTML.</p>
+    
+                    <p>Sin embargo, existen algunos métodos más para eliminar o reemplazar elementos:</p>
+    
+            <table class="tabla">
+                <tr>
+                    <th>Métodos</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td><button type="button">UNDEFINED</button>.remove()</td>
+                    <td>Elimina el propio nodo de su elemento padre.</td>
+                    <!-- <td></td> -->
+                </tr>
+                <tr>
+                    <td><button type="button">NODE</button>.removeChild(node)</td>
+                    <td>Elimina y devuelve el nodo hijo node.</td>
+                </tr>
+                <tr>
+                    <td><button type="button">NODE</button>.replaceChild(new, old)</td>
+                    <td>Reemplaza el nodo hijo old por new. Devuelve old.</td>
+                </tr>
+            </table>
+            <p>El método .remove() se encarga de desconectarse del DOM a sí mismo, mientras que el segundo método, .removeChild(), desconecta el nodo o elemento HTML proporcionado. Por último, con el método .replaceChild() se nos permite cambiar un nodo por otro.</p>
+    
+            <h3 class="h3">El método removeChild()</h3>
+    
+            <p>En algunos casos, nos puede interesar eliminar un nodo hijo de un elemento. Para esas situaciones, podemos utilizar el método .removeChild(node) donde node es el nodo hijo que queremos eliminar:</p>
+    
+            <pre class="ejemplo">
+                <code>
+                    const div = document.querySelector(".item:nth-child(2)"); // &lt;div class="item">2&lt;/div>
+    
+                    document.body.removeChild(div); // Desconecta el segundo .item
+                </code>
+            </pre>
+    
+            <h3 class="h3">El método replaceChild()</h3>
+            <p>De la misma forma, el método replaceChild(new, old) nos permite cambiar un nodo hijo old por un nuevo nodo hijo new. En ambos casos, el método nos devuelve el nodo reemplazado:</p>
+    
+            <pre class="ejemplo">
+                <code>
+                    const div = document.querySelector(".item:nth-child(2)");
+    
+                    const newnode = document.createElement("div");
+                    newnode.textContent = "DOS";
+                    
+                    document.body.replaceChild(newnode, div);
+                </code>
+            </pre>
+            </div>
+     
+            <footer class="footer" id="footer">
+                <div class="copy">
+                    <p>Creado por: <a href="https://www.facebook.com/rolandoRivera85">
+                     Rolando Rivera</a></p>
+                    <p>Copyright: Todos los derechos reservados.</p>
+             
+                </div>
+                 </footer>
+        </div>
+    </div>
+
+    <script src="../../index.js"></script>
+</body>
+</html>

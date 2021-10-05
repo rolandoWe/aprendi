@@ -1,0 +1,283 @@
+
+.cont_reloj{
+    width:100%;
+    /* height:500px; */
+    padding: 2px 0;
+    background-color: rgb(2, 2, 2);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.caja_reloj{
+    width:450px;
+    height:450px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 0 85px 15px inset rgb(0, 0, 255);
+    /* z-index: 100; */
+    /* animation:reloj 5s infinite linear */
+
+
+}
+@keyframes reloj{    
+    0%{box-shadow: 0 0 85px 15px inset rgb(0, 0, 255); }    
+    50%{box-shadow: 0 0 8px 15px inset rgb(226, 226, 235);background-color: rgb(0, 0, 255); }
+    100%{box-shadow: 0 0 85px 15px inset rgb(0, 0, 255); }
+}
+.reloj,.reloj_mes,.reloj_año,.reloj_dias,.reloj_am,.reloj_caja_hora,.reloj_hora,.reloj_segundos{
+    /* border:solid 1px black; */
+    text-align: center;
+    border-radius: 20px;
+    margin: 0px auto;
+
+    /* background-color: rgb(60, 255, 0); */
+}
+.reloj{
+    width: 70%;
+    height: 70%;
+    /* border:solid black 1px; */
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 3,.1);
+    border-radius: 10%;
+    /* box-shadow: 0 0 95px 12px inset rgb(0, 0, 255); */
+    /* transform: scale(.9) */
+    /* box-shadow: 0px 2px red; */
+    /* animation: rodar infinite linear 5s; */
+
+}
+@keyframes rodar{
+    0%{transform: scale(.2)}
+    50%{transform: scale(1)}
+    100%{transform: scale(.2)}
+}
+
+.reloj_mes{
+    width:60%;
+    height:30px;
+    line-height: 30px;
+    font-family: "Quantico";
+    font-weight: bold;
+    font-size:22px;
+
+
+}
+.reloj_año{
+    width:30%;
+    height:40px;
+    line-height: 40px;
+    font-family: "Quantico";
+    font-weight: bold;
+    font-size: 22px;
+    /* margin:0; */
+
+
+}
+.reloj_dias{
+    width:60%;
+    height:30px;
+    line-height: 30px;
+    font-family: "Quantico";
+    font-weight: bold;
+    font-size: 20px;
+
+
+}
+.reloj_am{
+    width:30%;
+    height:30px;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family:"DotGothic16";
+
+
+
+}
+.reloj_caja_hora{
+    width:95%;
+    height:100px;
+    display: flex;
+}
+.reloj_hora{
+    width:80%;
+    height:90%;
+    line-height: 100px;
+    font-size: 65px;
+    font-family:"DotGothic16";
+    font-weight: bold;
+    padding:0 5px;
+    /* background-color: bisque; */
+    /* text-shadow:2px 2px 5px rgb(0, 0, 255); */
+
+
+    box-sizing: border-box;
+}
+.reloj_segundos{
+    width:20%;
+    height:50px;
+    line-height: 40px;
+    font-size: 28px;
+    font-weight: bold;
+    font-family:"DotGothic16";
+}
+.reloj_am,.reloj_año,.reloj_dias,.reloj_caja_hora,.reloj_mes{
+    /* box-shadow: 0px 0px 5px 2px   inset rgb(0, 0, 255); */
+    background-color: black;
+    color: rgb(0, 0, 255);
+}
+
+.bolas{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.bola{
+    width: 10px;
+    height:50px;
+    border-radius: 50%;
+    top: 0px;
+    background-color: blanchedalmond;
+    position: absolute;
+}
+.bola:nth-child(1){
+    left: 10px;
+    left:1%;
+    animation-delay: 1.1s;
+}
+.bola:nth-child(2){
+    left:100px;
+    /* background-color: rgb(102, 35, 35); */
+    left:10%;
+    animation-delay: 3s;
+
+}
+.bola:nth-child(3){
+    left:100px;
+    left:20%;
+    animation-delay: 3s;
+    animation-duration: 2.5s;
+    width:10px;
+    height:50px
+}
+.bola:nth-child(4){
+    left:100px;
+    left:30%;
+    animation-delay: 4s;
+    animation-duration: 3s;
+}
+.bola:nth-child(5){
+    left:100px;
+    left:40%;
+    animation-delay: 5s;
+    animation-duration: 2.9s;
+}
+.bola:nth-child(6){
+    left:100px;
+    left:50%;
+    animation-delay: 6s;
+    animation-duration: 2.4s;
+}
+.bola:nth-child(7){
+    left:100px;
+    left:60%;
+    animation-delay: 7s;
+    animation-duration: 1s;
+}
+.bola:nth-child(8){
+    left:100px;
+    left:70%;
+    animation-delay: 8s;
+    animation-duration: 1.6s;
+}
+.bola:nth-child(9){
+    left:100px;
+    left:80%;
+    animation-delay: 9s;
+    animation-duration: 2.7s;
+}
+.bola:nth-child(10){
+    left:100px;
+    left:90%;
+    animation-delay: 10s;
+    animation-duration: 1.8s;
+}
+.bola:nth-child(11){
+    left: 10px;
+    left:5%;
+    animation-delay: 1.5s;
+    animation-duration: 1.3s;
+
+}
+.bola:nth-child(12){
+    left:100px;
+    left:15%;
+    animation-delay: 2.5s;
+    animation-duration: 2.4s;
+}
+.bola:nth-child(13){
+    left:100px;
+    left:25%;
+    animation-delay: 3.5s;
+    animation-duration: 3s;
+    width:10px;
+    height:50px
+}
+.bola:nth-child(14){
+    left:100px;
+    left:35%;
+    animation-delay: 4.5s;
+    animation-duration: 3.3s;
+}
+.bola:nth-child(15){
+    left:100px;
+    left:45%;
+    animation-delay: 5.5s;
+    animation-duration: 1.8s;
+}
+.bola:nth-child(16){
+    left:100px;
+    left:55%;
+    animation-delay: 6.5s;
+    animation-duration: 2.3s;
+}
+.bola:nth-child(17){
+    left:100px;
+    left:65%;
+    animation-delay: 7.5s;
+    animation-duration: 1.4s;
+}
+.bola:nth-child(18){
+    left:100px;
+    left:75%;
+    animation-delay: 8.5s;
+    animation-duration: 3s;
+}
+.bola:nth-child(19){
+    left:100px;
+    left:85%;
+    animation-delay: 9.5s;
+    animation-duration: 2.3s;
+}
+.bola:nth-child(20){
+    left:100px;
+    left:95%;
+    animation-delay: 10.5s;
+    animation-duration: 2s;
+}
+
+/* @keyframes bolita{
+    0%{top:-40px;opacity: 0;}
+    25%{transform:translatex(50px)}
+    50%{top:400px;opacity:1; }
+    100%{top:800px;opacity:1.5 }
+} */
