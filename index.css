@@ -1,0 +1,516 @@
+
+*{
+    /* padding: 0; */
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+
+    /* background:darkcyan */
+}
+.contenedor{
+    /* background: rgb(221, 183, 183); */
+    width:100%;
+    overflow: hidden;
+    transition: .5s;
+}
+.main{
+    width:100%;
+    height:60px;
+    background: rgb(0, 0, 255);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: .8s;
+    z-index: 100;
+}
+.nav{
+    width: 100%;
+    height: 80%;
+    /* background: rgb(182, 126, 59); */
+    margin: 5px auto;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    /* position: relative; */
+}
+.logo{
+    width:120px;
+    height:100%;
+    background:rgb(236, 236, 240) ;
+    justify-content: center;
+    /* line-height: 50px; */
+    display: flex;
+    align-items: center;
+    position: relative;
+    left:-5%;
+    border-radius: 10px;
+    box-shadow: 2px 2px 6px white ;
+}
+.logo p{
+    color: rgb(2, 35, 119);
+    font-size: 40px;
+    font-weight: bold;
+    font-family:"Quantico";
+    text-shadow: 0 0 6px rgb(255, 255, 255);
+}
+.R,.W{
+    color: rgb(0, 7, 87);
+    /* background-color: bisque; */
+    width: 10px;
+    font-size: 40px;
+    margin: 0;
+    padding-left: -5px;
+    text-shadow: 0 0 6px rgb(255, 255, 255);
+    font-family: 'Playball', cursive;
+
+}
+.ul{
+    width:50%;
+    height:100%;
+    /* background: cyan; */
+    display: flex;
+    position: relative;
+
+    align-items: center;
+    justify-content: space-between;
+    right:-5%
+}
+.ul ul{
+    /* background-color: rgb(0, 0, 90); */
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    border-bottom: solid transparent 2px;
+    border-bottom-style:groove;
+    transition: .5s;
+    border-radius: 5px;
+    z-index: 100;
+
+    /* left:-5px */
+    /* width:150px */
+}
+.ul ul li{
+    background-color: rgb(0, 0, 0);
+    margin:0px -39px;
+    /* width: 100%; */
+    /* height: 30px; */
+    padding: 0 5px;
+    transition: .5s;
+
+}
+.ul li{
+    list-style: none;
+    border-radius: 5px;
+}
+
+
+.close{
+    color: rgb(0, 0, 0);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    background: rgb(235, 1, 1);
+    display: none;
+}
+.ul>li{
+    /* background: rgb(80, 80, 79,.5); */
+    width: 100px;
+    height:30px;
+    padding: 0 5px;
+    line-height: 30px;
+    list-style: none;
+    border-bottom: solid transparent 2px;
+    border-bottom-style:groove;
+    transition: .8s;
+}
+.ul>li{
+    position: relative;
+    /* display: inline-block; */
+}
+.ul li:hover{
+    border-bottom: solid rgb(255, 255, 255) 2px;
+    background-color: rgb(0, 0, 68);
+
+}
+.ul>li:hover ul{
+    display: block;
+    /* background-color: brown; */
+    /* width:300px */
+}
+.ul li a{
+    /* background: crimson; */
+    /* width:100%; */
+    height: 100%;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-style: italic;
+    color: white;
+}
+.ul ul a{
+    text-align: left;
+}
+.menu{
+    width:30px;
+    position:absolute;
+    right: 5%;
+    font-size: 10px;
+display: none;
+transition: .5s;
+}
+.menu img{
+    color: white;
+    /* background: rgb(43, 44, 44); */
+}
+/* ************************HEADER************************ */
+.header{
+    width:100%;
+    height: 50vh;
+    margin: auto;
+    /* border: solid rgb(0, 1, 10) 1px; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7)0%,rgba(0, 0, 0, 0.7)100%),
+    url(imagenesPNG/DesarrolloSoftware.png);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+}
+.perfil{
+    width:100%;
+    height:60%;
+    /* background: cadetblue; */
+    display: flex;
+    /* position: relative; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.perfil_img{
+    /* margin-top: 5px; */
+    width:100px;
+    height:80px;
+    /* border:solid white 1px; */
+    overflow: hidden;
+    border-radius: 50%;
+}
+.perfil_img img{
+    width:100%;
+    height:100%
+}
+.perf_text{
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:50%;
+    height:100px;
+    /* border-bottom: solid rgb(196, 182, 182,.5) 4px; */
+    /* padding-left: 10px; */
+    /* padding-top: 50px; */
+    text-align: center;
+    /* background: rgba(235, 190, 190, 0.6); */
+    
+}
+.perf_text h2{
+    width:100%;
+    /* text-align: center; */
+    font-size: 28px;
+    color: white;
+    /* background-color: black; */
+    /* text-shadow: 1px 2px red; */
+    font-family: 'Playball', cursive;
+    /* height:30px; */
+    font-weight: bold;
+
+    /* font-family: 'Press Start 2P', cursive; */
+}
+.perf_text h2 span{
+    color: rgb(0, 7, 87);
+    text-shadow: 0 0 4px white;
+
+}
+.perf_text p{
+    /* height:30px; */
+    font-size: 22px;
+    font-family:"playball" ;
+    width:100%;
+    color: rgb(255, 255, 255);
+    /* background-color: black; */
+
+}
+.perfil_btn{
+    width:200px;
+    height:30px;
+    /* line-height: 30px; */
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    /* position: absolute; */
+    /* bottom: 130px; */
+    border: none;
+    border-radius: 5px;
+    background:rgb(255, 255, 255)
+    
+}
+/* *****************************************cuerpo***************************** */
+.cont_cuerpo{
+    width: 100%;
+    border-top:solid rgba(0, 0, 90) 4px;
+    padding: 5px 0;
+    margin: 10px auto;
+}
+.cuerpo_h2{
+    width: 100%;
+    padding-left: 10px;
+    /* text-align: center; */
+    background:rgb(0, 0, 90,.2);
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    font-style: italic;
+}
+/* ********************************servicios************************* */
+.cuerpo_servicios{
+    width:100%;
+    display: flex;
+    margin: 15px 0;
+    flex-wrap: wrap;
+}
+.servicio_uno{
+    width: 300px;
+    /* background: bisque; */
+    margin: 5px auto;
+    padding: 5px;
+}
+.web{
+    background-image:url(imagenesPNG/curso_web.png);
+    background-size: cover;
+}
+.app{
+    background-image:url(imagenesPNG/Desarrollo-Aplicaciones-Web.png);
+    background-size: cover;
+}
+.v_juegos{
+    background-image:url(imagenesPNG/videojuegos.png);
+    background-size: cover;
+}
+.servicio_uno h3{
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.9);
+    margin-bottom: 10px;
+    text-decoration: underline;
+    background-color: rgb(255, 255, 255,.3);
+}
+.servicio_uno p{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    /* color: #ffffff; */
+    color: rgba(0, 0, 0, 0.9);
+    background: rgb(255, 255, 255,.6);
+}
+.servicio_uno a{
+    color: rgb(0, 0, 180);
+    font-weight: bold;
+}
+/* **********************************CONOCIMIENTOS************************* */
+.conocimientos{
+    width:100%;
+    /* border: solid red 2px; */
+    display: flex;
+    margin: 5px 0;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+.p_conoce{
+    /* background: turquoise; */
+    border-bottom:solid rgb(0, 0, 90,.2) 2px;
+    font-size: 24px;
+    font-family: "playball";
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    color: #050505;
+
+}
+
+.cont_conocimientos{
+    width:150px;
+    height:150px;
+    overflow: hidden;
+    border-radius:3px;
+    background:rgb(0, 0,90,.2);
+    display: flex;
+    flex-direction: column;
+}
+.conocimientos_h2{
+    background-color: rgb(0, 0, 90,.2);
+    color: rgb(0, 0, 0);
+    /* text-align: center; */
+    padding-left: 10px;
+    width: 100%;
+    height:30px;
+    font-size: 25px;
+    line-height: 30px;
+    font-style: italic;
+}
+.conocimientos h3{
+    text-align: center;
+    /* background: chartreuse; */
+    border-bottom: solid white 2px;
+    font-size: 20px;
+    line-height: 20px;
+    padding-bottom:5px;
+    width: 100%;
+    color: #000000;
+
+}
+.html{
+    width:70%;
+    height:60%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.html img{
+    width:100%;
+    height: 100%;
+    background: white;
+}
+/* *********************************calculadora********** */
+.cont_calc{
+    color:white
+}
+/* *******************Aside******************* */
+.aside{
+    /* background-color: cornflowerblue; */
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding:5px 0
+
+}
+.aside_tutorial{
+    /* display: inline-block; */
+    background-color: rgb(0, 0, 90,.2);
+    width: 100%;
+    font-size: 25px;
+    padding-left: 10px;
+    font-weight: bold;
+    /* font-family: "playball"; */
+    font-style: italic;
+    /* font-family: 'Times New Roman', Times, serif; */
+
+
+}
+.python{
+    width:90%;
+    margin: 10px auto;
+    /* border: solid black 1px; */
+}
+.python h3{
+    font-size: 25px;
+}
+.python p a{
+    font-size: 22px;
+    color: rgb(4, 19, 131);
+}
+
+/* **************************animaciónes css************************* */
+.anim_h2{
+    background-color: rgb(245, 253, 253);
+    padding-left: 5px;
+    font-size: 30px;
+    margin-top: 20px;
+}
+.contenedor_anim{
+    width:100%;
+    border:solid black 1px
+}
+.animacion_resorte{
+    /* background-color: blue; */
+    margin: 5px;
+    /* height:200px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+}
+.animacion_resorte p{
+    /* background-color: cadetblue; */
+    width:80%;
+    font-size: 20px;
+
+}
+.animacion_resorte a{
+    color:blue;
+    font-weight:bold
+}
+.animacion_resorte p, .animacion{
+    margin: 2px;
+}
+.animacion{
+    width: 200px;
+    height:200px;
+    overflow: hidden;
+}
+.animacion img{
+    width:100%;
+    height:100%
+}
+
+/* ********************************FOOTER*************************** */
+.footer{
+    width:100%;
+    height:200px;
+    background: rgb(0, 10, 50);
+    /* padding: 5px 0; */
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.copy{
+    width:80%;
+    height:90%;
+    /* background: cornsilk; */
+    font-size: 20px;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.copy a{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-style: italic;
+    font-weight:inherit;
+    font-size: 20px;
+}
+.copy p{
+    width:100%;
+    /* background-color: blueviolet; */
+    font-size: 20px;
+    text-align: center;
+    color:white
+}
