@@ -1,0 +1,75 @@
+.contenedor_bolas{
+    width:500px;
+    height: 300px;
+    /* background-color: darkorange; */
+    margin:10px auto;
+
+}
+.nota{
+    background-color: rgb(255, 199, 44);
+    width:70%;
+    /* height:100px; */
+    margin:10px auto;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+.nota2{
+    background-color: rgb(32, 121, 0);
+    text-shadow: 0 0 3px white;
+}
+
+.nota p{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+ }
+.contenedor_bolas,.saco{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.saco{
+    width:90%;
+    height: 90%;
+    background-color: white;
+}
+.bola{
+    width:100px;
+    height:100px;
+    border:solid black 2px;
+    border-radius: 50%;
+    float: left;
+    text-align: center;
+    line-height: 100px;
+    font-size: 25px;
+    cursor: pointer;
+}
+.bola:nth-child(1):hover{
+    width:105px;
+    height:105px;
+    border:solid rgb(32, 121, 0) 5px;
+
+}
+.bola:nth-child(2):hover{
+    width:105px;
+    height:105px;
+    border:solid rgb(255, 242, 0) 5px;
+
+}
+.bola:nth-child(3):hover{
+    width:105px;
+    height:105px;
+    border:solid rgb(255, 0, 0) 5px;
+
+}
+.verde{
+    background-color: green;
+}
+.amarillo{
+    background-color: yellow;
+}
+.rojo{
+    background-color: rgb(255, 0, 0);
+}

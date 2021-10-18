@@ -1,0 +1,76 @@
+.container_calc{
+    width:90%;
+    height:500px;
+    background:linear-gradient( rgb(255, 1, 1), rgb(233, 223, 223),  rgb(255, 1, 1));
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form_calc2{
+    width:200px;
+    /* border:solid black 1px; */
+    border-radius: 5px;
+    margin:100px auto;
+    background: rgb(3, 35, 165);
+    padding: 5px;
+    box-shadow: 0 0 5px rgb(255, 255, 255);
+}
+.texto_calc{
+    width:100%;
+    height:60px;
+    background-color: black;
+    margin: auto;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    color:rgb(102, 255, 0);
+    box-shadow: 0 0 6px 4px rgb(1, 117, 218) inset;
+    padding-left: 10px;
+    font-size: 25px;
+    font-family:"DotGothic16";
+    line-height: 60px;
+}
+/* Esta clase (.color) es para tomar colores  por codigo*/
+.color{
+    color:#ffffff
+}
+.marca{
+    width:100%;
+    height:20px;
+    /* border:solid black 1px; */
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 20px;
+    background:linear-gradient(rgb(3, 49, 128),white,rgb(7, 14, 199));
+    box-sizing: border-box;
+    margin:5px 0
+}
+.columnas{
+    display: flex;
+}
+.columnas *{
+    flex:1;
+    margin: 5px;
+    height:30px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background: rgb(14, 214, 14);
+    box-shadow: 0 0 5px 4px rgb(11, 49, 11) inset;
+    transition: .3s;
+}
+.columnas *:hover{
+    transform:scale(1.1)
+}
+.signo{
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 8px 3px rgb(0, 8, 255) inset;
+    color:rgb(0, 0, 0)
+}
+.limpiar{
+    background: rgb(255, 0, 0);
+    box-shadow: 0 0 5px 3px rgb(90, 1, 1) inset;
+}
