@@ -35,25 +35,26 @@
           <nav class="nav ">
               <div class="logo">
                   <!-- <p class="logoP1">Campo<span class="logoP2">Tecnológico</span></p> -->
-                  <p><span class="R">R</span>o<span class="W">L</span>o</p>
+                  <p class="logo_p"><span class="R">R</span>o<span class="W">L</span>o</p>
+                  <p class="comm">.web</p>
               </div>
               <ul class="ul">
                   <span class="close">X</span>
-                  <li><a href="##">Menu</a>
+                  <li><a href="##">Sección</a>
                     <ul>
-                        <li><a class="cx" href="paginas/hobby/papalote/papalote.html">Papalóte</a></li>
-                        <li><a class="cx" href="paginas/hobby/reloj/reloj.html">Reloj</a></li>
-                        <li><a class="cx" href="paginas/javascript/j-s.html">Javascript</li>
-                        <li><a class="cx" href="#">Calculadora</a></li>
+                        <li><a class="cx" href="#proyectos">Proyectos</a></li>
+                        <li><a class="cx" href="#tecnologias">Tecnologias</a></li>
+                        <li><a class="cx" href="#tutoriales">Tutoriales</li>
+                        <li><a class="cx" href="#footer">Footer</a></li>
                        </ul>
                     </li>
-                  <li><a href="##">Seccion</a>
+                  <li><a href="##">Contenido</a>
                     <ul>
-                        <li><a class="cx" href="#header">Inicio</a></li>
-                        <li><a class="cx" href="#servicios">Servicios</a></li>
-                        <li><a class="cx" href="#tecnologias">Tecnologías</a></li>
-                        <li><a class="cx" href="#tutoriales">Tutoriales</a></li>
-                        <li><a class="cx" href="#footer">Footer</a></li>
+                        <li><a class="cx" href="paginas/javascript/j-s.html">El DOM JS</a></li>
+                        <li><a class="cx" href="paginas/calculadora/calculadora.html">Calculadora</a></li>
+                        <li><a class="cx" href="paginas/hobby/resorte/resorte.html">Resorte</a></li>
+                        <li><a class="cx" href="paginas/hobby/semaforo/semaforo.htm">Color Fondo JS</a></li>
+                        <!-- <li><a class="cx" href="#footer">Footer</a></li> -->
                        </ul></li>
                   <!-- <li><a href="##">seccion</a>
                      <ul>
@@ -63,7 +64,7 @@
                       <li><a href="#">seccion_4----jkj kk</a></li>
                      </ul>
                   </li> -->
-                  <li><a href="##">contacto</a></li>
+                  <li><a href="##">Contacto</a></li>
               </ul>
               <div class="menu">
                   <img src="imagenesSVG/bars-solid.svg" alt="">
@@ -73,41 +74,46 @@
         <!-- -------------------HEADER------------------ -->
         <header class="header" id="header">
             <div class="perfil">
-                <div class="perfil_img">
-                    <img src="imagenesPNG/rolando2.png" alt="">
-                </div>
+
                 <div class="perf_text">
                     <h2><span>R</span>olando <span>R</span>ivera <span>T</span>oledo</h2>
                      <p>Programador y Desarrollador Web..</p>
                 </div>
-                <!-- <button class="perfil_btn">Mas Informacion</button> -->
+                <div class="perfil_img">
+                    <img src="imagenesPNG/rolando2.png" alt="">
+                </div>
             </div>
         </header>
         <!-- --------------------------CUERPO------------------------ -->
         <div class="cont_cuerpo">
-            <h2 class="cuerpo_h2" id="servicios">Servicios</h2>
+            <h2 class="cuerpo_h2" id="proyectos">Mis Proyectos</h2>
             <!-- ------------------------------servicios------------------------- -->
-            <div class="cuerpo_servicios">
-                    <div class="servicio_uno web">
-                        <h3>Desarrollo Web.</h3>
-                        <p>Nos ponemos a tu disposición para la creación de páginas y sitios web
-                            para tu negocio o empresa.
-                        </p>
+            <div class="cuerpo_proyecto">
+                    <div class="proyecto_uno calculadora">
+                       <div class="calc_img">
+                           <img src="imagenespng/calculadora.png" alt="">
+                       </div>
+                       <h3>Calculadora hecha con HTML, CSS y Javascript.</h3>
+                       <button type="button" class=""><a href="paginas/calculadora/calculadora.html">Ver Calculadora</a> </button>
+                       <button type="button" class=""><a href="https://github.com/rolandoWe/calculadora"> Ver Codigo</a></button>
                     </div>
-                    <div class="servicio_uno app">
-                        <h3> App.</h3>
-                        <p>Si de Aplicaciónes hablamos, tambien puedes contar con nosotros.
-                            Somos especialistas en la creación de aplicaciones web.
-                        </p>
+                    <div class="proyecto_uno calculadora">
+                       <div class="calc_img">
+                           <img src="imagenespng/resorte2.png" alt="">
+                       </div>
+                       <h3>Resorte con HTML, CSS y Javascript.</h3>
+                       <button type="button" class=""><a href="paginas/hobby/resorte/resorte.html">Ver Resorte</a> </button>
+                       <button type="button" class=""><a href="#"> Ver Codigo</a></button>
                     </div>
-                    <div class="servicio_uno v_juegos">
-                        <h3>VideoJuegos.</h3>
-                        <p>Somos especialistas en la creacion de videojuegos
-                            con las tecnologias <a href="https://i.workana.com/glosario/que-es-c/">
-                             C++</a>, <a href="https://www.java.com/es/download/help/whatis_java.html"> 
-                            Java</a>, <a href="https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/JavaScript_basics"> Javascript</a>, etc etc.
-                        </p>
+                    <div class="proyecto_uno calculadora">
+                       <div class="calc_img">
+                           <img src="imagenespng/semaforo.png" alt="">
+                       </div>
+                       <h3>Cambiar color de fondo de cada circulo con un click.</h3>
+                       <button type="button" class=""><a href="paginas/hobby/semaforo/semaforo.htm">Ver y Jugar</a> </button>
+                       <button type="button" class=""><a href="https://github.com/rolandoWe/calculadora"> Ver Codigo</a></button>
                     </div>
+
             </div>
             <!-- -------------------------------CONOCIMIENTOS------------------------ -->
             <h2 class="conocimientos_h2" id="tecnologias">Tecnologías</h2>
@@ -189,15 +195,17 @@
         </div>
  
     <footer class="footer" id="footer">
-   <div class="copy">
-       <p>Creado por: <a href="https://www.facebook.com/rolandoRivera85">
-        Rolando Rivera</a></p>
-       <p>Copyright: Todos los derechos reservados.</p>
+      <div class="copy">
+          <p>Creado por: <a href="https://www.facebook.com/rolandoRivera85">
+              Rolando Rivera</a></p>
+          <p>Copyright: Todos los derechos reservados.</p>
 
-   </div>
+      </div>
     </footer>
     </div>
     <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/f7f35171d9.js" crossorigin="anonymous"></script>
+
     <!-- <script src="reloj.js"></script> -->
 </body>
 </html>

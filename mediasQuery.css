@@ -65,9 +65,15 @@
         right: 0px;
         top: 0;
     }
+    .header{
+        height:400px
+    }
+    .perfil{
+        flex-direction: column;
+    }
     .perfil_img{
-        width:90px;
-        height:70px;
+        width:200px;
+        height:200px;
     }
     .perf_text{
         height:70px
@@ -96,11 +102,14 @@
         width: 100px;
         height:80%;
     }
-    .logo p{
+    .logo_p{
         font-size: 30px;
     }
 .R,.W{
     font-size: 30px;
+}
+.comm{
+    font-size: 18px;
 }
 
     .ul li, .ul ul{
@@ -176,8 +185,8 @@ text-decoration: underline;
         height:80px
     }
     .perfil_img{
-        width:80px;
-        height:60px;
+        width:150px;
+        height:150px;
     }
     .perfil button{
         bottom: 140px;

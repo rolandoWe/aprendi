@@ -42,7 +42,7 @@ ul.addEventListener("click",function(u){
 function cerr(c){
     if(c.className=="cx"){
         ul.classList.toggle("mostrar_ul");
-        menu.style.display="block"
+        // menu.style.display="block"
     }
 }
 
