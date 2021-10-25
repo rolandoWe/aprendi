@@ -7,8 +7,6 @@
 }
 body{
     width:100%;
-
-    /* background:darkcyan */
 }
 .contenedor{
     /* background: rgb(221, 183, 183); */
@@ -19,8 +17,8 @@ body{
 .main{
     width:100%;
     height:60px;
-    background: rgb(0, 0, 255);
-    border-bottom:double 4px rgb(255, 255, 255,.9);
+    background: rgb(0, 50, 150);
+    border-bottom:double 4px rgb(255, 255, 255);
     display: flex;
     align-items: center;
     position: fixed;
@@ -39,48 +37,34 @@ body{
     display: flex;
     align-items:center;
     justify-content: space-between;
-    /* position: relative; */
 }
 .logo{
     width:130px;
     height:100%;
-    /* background:rgb(236, 236, 240) ; */
-    /* justify-content: center; */
-    /* line-height: 50px; */
-    /* display: flex; */
-    /* align-items: center; */
     position: relative;
-    /* flex-direction: column; */
     left:-5%;
     border-radius: 10px;
-    /* box-shadow: 2px 2px 6px white ; */
 }
 .logo_p{
-    color: rgb(2, 35, 119);
+    color: rgb(0, 0, 0,.9);
     font-size: 35px;
     font-weight: bold;
     font-family:"Quantico";
     line-height: 35px;
-    /* background-color: rgb(236, 138, 138); */
-    text-shadow: 0 0 2px rgb(255, 255, 255);
+    text-shadow: 1px 1px  rgb(255, 255, 255);
     width: 100%;
     height:30px
 }
 .R,.W{
-    color: rgb(0, 7, 87);
-    /* background-color: bisque; */
+    color: rgb(0, 0, 0);
     width: 10px;
     font-size: 35px;
     margin: 0;
     padding-left: -5px;
     text-shadow: 0 0 2px rgb(255, 255, 255);
     font-family: 'Playball', cursive;
-
-
-
 }
 .comm{
-    /* background-color: blueviolet; */
     height:20px;
     width:100%;
     font-size: 25px;
@@ -90,19 +74,17 @@ body{
     color: white;
     text-shadow: 1px 1px 2px rgb(2, 2, 83);
     font-family:"Quantico";
-
-
 }
 .ul{
     width:50%;
     height:100%;
-    /* background: cyan; */
     display: flex;
     position: relative;
 
     align-items: center;
     justify-content: space-between;
-    right:-5%
+    right:-5%;
+    transition: .5s;
 }
 .ul ul{
     /* background-color: rgb(0, 0, 90); */
@@ -115,25 +97,17 @@ body{
     transition: .5s;
     border-radius: 5px;
     z-index: 100;
-
-    /* left:-5px */
-    /* width:150px */
 }
 .ul ul li{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 125, 160);
     margin:0px -39px;
-    /* width: 100%; */
-    /* height: 30px; */
     padding: 0 5px;
     transition: .5s;
-
 }
 .ul li{
     list-style: none;
     border-radius: 5px;
 }
-
-
 .close{
     color: rgb(0, 0, 0);
     width: 30px;
@@ -147,8 +121,6 @@ body{
     display: none;
 }
 .ul>li{
-    background: rgb(80, 80, 79,.5);
-    /* width: 120px; */
     height:30px;
     padding: 0 15px;
     line-height: 30px;
@@ -160,32 +132,23 @@ body{
 }
 .icono{
     width:20px;
-    /* color:rgb(0, 0, 41); */
     margin-left:10px ;
 }
 .ul>li{
     position: relative;
-    /* display: inline-block; */
 }
 .ul li:hover{
     border-bottom: solid rgb(255, 255, 255) 2px;
-    background-color: rgb(0, 0, 68);
-
 }
 .ul>li:hover ul{
     display: block;
-    /* background-color: brown; */
-    /* width:300px */
 }
 .ul li a{
-    /* background: crimson; */
-    /* width:100%; */
     height: 100%;
     display: block;
     text-align: center;
     text-decoration: none;
     font-size: 20px;
-    /* font-style: italic; */
     font-weight: bold;
     color: white;
 }
@@ -202,14 +165,13 @@ transition: .5s;
 }
 .menu img{
     color: white;
-    /* background: rgb(43, 44, 44); */
 }
 /* ************************HEADER************************ */
 .header{
     width:100%;
     height: 50vh;
-    margin: auto;
-    /* border: solid rgb(0, 1, 10) 1px; */
+    box-sizing: border-box;
+    margin:20px auto;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7)0%,rgba(0, 0, 0, 0.7)100%),
     url(imagenesPNG/DesarrolloSoftware.png);
     background-position: center;
@@ -221,22 +183,18 @@ transition: .5s;
 .perfil{
     width:100%;
     height:90%;
-    /* background: cadetblue; */
     display: flex;
     position: absolute;
-    /* flex-direction: column; */
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     bottom: 0;
-
 }
 .perfil_img{
-    /* margin-top: 5px; */
     width:200px;
-    height:200px;
-    /* border:solid white 1px; */
+    height:190px;
     overflow: hidden;
     border-radius: 50%;
+    box-shadow: 0px 0px 4px rgb(0, 50, 250);
 }
 .perfil_img img{
     width:100%;
@@ -247,48 +205,34 @@ transition: .5s;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width:60%;
+    width:50%;
     height:100px;
     text-align: center;
-    
 }
 .perf_text h2{
     width:100%;
     font-size: 40px;
     color: white;
-    font-family: 'Playball', cursive;
     font-weight: bold;
 }
 .perf_text h2 span{
-    color: rgb(0, 7, 87);
-    text-shadow: 0 0 4px white;
-
+    color: rgb(0, 42, 255);
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
 }
 .perf_text p{
-    /* height:30px; */
     font-size: 30px;
-    font-family:"playball" ;
     width:100%;
     color: rgb(255, 255, 255);
-    /* background-color: black; */
-
 }
-
 /* *****************************************cuerpo***************************** */
 .cont_cuerpo{
     width: 100%;
-    border-top:solid rgba(0, 0, 90) 4px;
     padding: 5px 0;
     margin: 10px auto;
 }
-.cuerpo_h2{
-    width: 100%;
-    padding-left: 10px;
-    /* text-align: center; */
-    background:rgb(0, 0, 90,.2);
-    font-size: 25px;
-    color: rgb(0, 0, 0);
-    font-style: italic;
+.cuerpo_h2 i{
+    color:rgb(0, 50, 250);
+    padding-left: 40px;
 }
 /* ********************************servicios************************* */
 .cuerpo_proyecto{
@@ -298,16 +242,15 @@ transition: .5s;
     flex-wrap: wrap;
 }
 .proyecto_uno{
-    width: 300px;
+    width: 200px;
     height:350px;
-    /* background: bisque; */
+    background: bisque;
     margin: 5px auto;
     padding: 5px;
-    box-shadow: 0 0 3px black;
     border-radius: 5px;
 }
 .calc_img{
-    width:80%;
+    width:100%;
     height:60%;
     overflow: hidden;
 }
@@ -317,32 +260,26 @@ transition: .5s;
 }
 
 .proyecto_uno h3{
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
     font-weight: bold;
-    /* color: rgba(6, 0, 124, 0.9); */
     margin-bottom: 10px;
-    background-color: rgb(255, 255, 255,.3);
 }
 .proyecto_uno button{
     font-weight: bold;
-    /* font-family: 'Times New Roman', Times, serif; */
     text-align: center;
-    /* color: #000000; */
-    background: rgba(94, 255, 0, 0.6);
+    background: rgba(0, 0, 0);
     border-radius: 5px;
     border:none;
     transition: .5s;
 }
 .proyecto_uno button:hover{
-    background: rgb(196, 238, 169);
+    background: rgb(32, 32, 32);
     transform: scale(1.1);
-
 }
 .proyecto_uno a{
-    font-size: 18px;
-
-    color: rgb(0, 0, 0);
+    font-size: 15px;
+    color: rgb(255, 255, 255);
     font-weight: bold;
     text-decoration: none;
 }
@@ -355,147 +292,108 @@ transition: .5s;
     padding: 5px;
     flex-wrap: wrap;
 }
-.p_conoce{
-    /* background: turquoise; */
-    border-bottom:solid rgb(0, 0, 90,.2) 2px;
-    font-size: 24px;
-    font-family: "playball";
-    font-weight: bold;
-    text-align: center;
-    margin-top: 10px;
-    color: #050505;
-
-}
-
 .cont_conocimientos{
-    width:150px;
-    height:150px;
+    width:100px;
+    height:100px;
     overflow: hidden;
     border-radius:3px;
-    background:rgb(0, 0,90,.2);
+    background:rgb(0, 50,150,.1);
     display: flex;
     flex-direction: column;
+    margin: 30px auto;
 }
-.conocimientos_h2{
-    background-color: rgb(0, 0, 90,.2);
+.h2{
+    background-color: rgb(0, 50, 250,.1);
     color: rgb(0, 0, 0);
-    /* text-align: center; */
-    padding-left: 10px;
+    padding: 10px;
     width: 100%;
-    height:30px;
-    font-size: 25px;
-    line-height: 30px;
-    font-style: italic;
+    margin: 10px auto;
+    font-size: 30px;
 }
-.conocimientos h3{
+.h2 i{
+    color:rgb(0,50,250);
+    padding-left: 40px;
+}
+.cont_conocimientos h3{
     text-align: center;
     /* background: chartreuse; */
-    border-bottom: solid white 2px;
     font-size: 20px;
-    line-height: 20px;
-    padding-bottom:5px;
+    padding:1px;
     width: 100%;
     color: #000000;
-
 }
-.html{
+.conocimiento_img{
     width:70%;
     height:60%;
     border-radius: 5px;
     overflow: hidden;
 }
-.html img{
+.conocimiento_img img{
     width:100%;
     height: 100%;
-    background: white;
+    /* background: white; */
 }
-/* *********************************calculadora********** */
-.cont_calc{
-    color:white
-}
-/* *******************Aside******************* */
-.aside{
-    /* background-color: cornflowerblue; */
+/* *******************tutoriales******************* */
+.tutoriales{
     width:100%;
     display: flex;
     flex-wrap: wrap;
-    padding:5px 0
+    padding:5px 0;
+    margin: 5px auto;
 
 }
-.aside_tutorial{
-    /* display: inline-block; */
-    background-color: rgb(0, 0, 90,.2);
-    width: 100%;
-    font-size: 25px;
-    padding-left: 10px;
-    font-weight: bold;
-    /* font-family: "playball"; */
-    font-style: italic;
-    /* font-family: 'Times New Roman', Times, serif; */
-
-
-}
-.python{
-    width:90%;
+.tutorial{
+    width:350px;
     margin: 10px auto;
     /* border: solid black 1px; */
 }
-.python h3{
+.tutorial h3{
     font-size: 25px;
 }
-.python p a{
+.tutorial p a{
     font-size: 22px;
     color: rgb(4, 19, 131);
 }
 
-/* **************************animaciónes css************************* */
-.anim_h2{
-    background-color: rgb(245, 253, 253);
-    padding-left: 5px;
-    font-size: 30px;
-    margin-top: 20px;
-}
-.contenedor_anim{
+/* **************************SOBRE MI************************* */
+.contenedor_my{
+    /* background-color: rgb(0, 50, 150,.1); */
     width:100%;
-    border:solid black 1px
 }
-.animacion_resorte{
-    /* background-color: blue; */
-    margin: 5px;
-    /* height:200px; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* flex-wrap: wrap; */
+.ul_sobre_mi{
+    /* background-color: rgb(0, 42, 255); */
+    width:50%
 }
-.animacion_resorte p{
-    /* background-color: cadetblue; */
-    width:80%;
+.ul_sobre_mi span{
+    /* background-color: rgb(235, 1, 1); */
+    font-size: 25px;
+    font-weight: bold;
+    font-style: oblique;
+}
+.ul_sobre_mi ul{
+    /* background-color: rosybrown; */
+    /* padding:5px ; */
+    margin:5px auto
+}
+.ul_sobre_mi ul li{
+    /* border: solid blue 1px; */
+    background-color: rgb(197, 202, 206,.3);
+    margin: 5px auto;
     font-size: 20px;
-
+    font-weight: lighter;
+    font-style: italic;
 }
-.animacion_resorte a{
-    color:blue;
-    font-weight:bold
-}
-.animacion_resorte p, .animacion{
-    margin: 2px;
-}
-.animacion{
-    width: 200px;
-    height:200px;
-    overflow: hidden;
-}
-.animacion img{
-    width:100%;
-    height:100%
+.ul_sobre_mi li a{
+    color: blue;
+    text-decoration: none;
+    /* width: 100%; */
 }
 
 /* ********************************FOOTER*************************** */
 .footer{
     width:100%;
     height:200px;
-    background: rgb(0, 10, 50);
+    background: rgb(0, 50, 150);
     /* padding: 5px 0; */
     margin: 5px 0;
     display: flex;

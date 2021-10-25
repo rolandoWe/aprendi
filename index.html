@@ -34,7 +34,6 @@
         <main class="main">
           <nav class="nav ">
               <div class="logo">
-                  <!-- <p class="logoP1">Campo<span class="logoP2">Tecnológico</span></p> -->
                   <p class="logo_p"><span class="R">R</span>o<span class="W">L</span>o</p>
                   <p class="comm">.web</p>
               </div>
@@ -74,19 +73,19 @@
         <!-- -------------------HEADER------------------ -->
         <header class="header" id="header">
             <div class="perfil">
-
+                <div class="perfil_img">
+                    <img src="imagenesPNG/rolando2.png" alt="">
+                </div>
                 <div class="perf_text">
                     <h2><span>R</span>olando <span>R</span>ivera <span>T</span>oledo</h2>
                      <p>Programador y Desarrollador Web..</p>
                 </div>
-                <div class="perfil_img">
-                    <img src="imagenesPNG/rolando2.png" alt="">
-                </div>
+ 
             </div>
         </header>
         <!-- --------------------------CUERPO------------------------ -->
         <div class="cont_cuerpo">
-            <h2 class="cuerpo_h2" id="proyectos">Mis Proyectos</h2>
+            <h2 class="h2" id="proyectos">Mis Proyectos <i class="fas fa-project-diagram"></i></h2>
             <!-- ------------------------------servicios------------------------- -->
             <div class="cuerpo_proyecto">
                     <div class="proyecto_uno calculadora">
@@ -94,7 +93,7 @@
                            <img src="imagenesPNG/calculadora.png" alt="">
                        </div>
                        <h3>Calculadora hecha con HTML, CSS y Javascript.</h3>
-                       <button type="button" class=""><a href="paginas/calculadora/calculadora.html">Ver Calculadora</a> </button>
+                       <button type="button" class=""><a href="paginas/calculadora/calculadora.html">Ver</a> </button>
                        <button type="button" class=""><a href="https://github.com/rolandoWe/calculadora"> Ver Codigo</a></button>
                     </div>
                     <div class="proyecto_uno calculadora">
@@ -102,7 +101,7 @@
                            <img src="imagenesPNG/resorte2.png" alt="">
                        </div>
                        <h3>Resorte con HTML, CSS y Javascript.</h3>
-                       <button type="button" class=""><a href="paginas/hobby/resorte/resorte.html">Ver Resorte</a> </button>
+                       <button type="button" class=""><a href="paginas/hobby/resorte/resorte.html">Ver</a> </button>
                        <button type="button" class=""><a href="#"> Ver Codigo</a></button>
                     </div>
                     <div class="proyecto_uno calculadora">
@@ -110,87 +109,105 @@
                            <img src="imagenesPNG/semaforo.png" alt="">
                        </div>
                        <h3>Cambiar color de fondo de cada circulo con un click.</h3>
-                       <button type="button" class=""><a href="paginas/hobby/semaforo/semaforo.htm">Ver y Jugar</a> </button>
+                       <button type="button" class=""><a href="paginas/hobby/semaforo/semaforo.htm">Ver</a> </button>
                        <button type="button" class=""><a href="https://github.com/rolandoWe/calculadora"> Ver Codigo</a></button>
                     </div>
 
             </div>
             <!-- -------------------------------CONOCIMIENTOS------------------------ -->
-            <h2 class="conocimientos_h2" id="tecnologias">Tecnologías</h2>
-            <p class="p_conoce">Contamos con conocimientos básicos en los siguientes lenguajes.</p>
+            <h2 class="h2" id="tecnologias">Tecnologías <i class="fas fa-laptop"></i></h2>
             <div class="conocimientos">
                 <div class="cont_conocimientos">
                     <h3>HTML</h3>
-                    <div class="html">
-                        <img src="imagenesPNG/html.png" alt="">
+                    <div class="conocimiento_img">
+                        <img src="imagenesPNG/HTML5_Badge.svg.png" alt="">
                     </div>
                 </div>
                 <div class="cont_conocimientos">
                     <h3>CSS</h3>
-                    <div class="html">
-                        <img src="imagenesPNG/css.png" alt="">
+                    <div class="conocimiento_img">
+                        <img src="imagenesPNG/CSS3_logo.svg.png" alt="">
                     </div>
                 </div>
                 <div class="cont_conocimientos">
                     <h3>Javascript</h3>
-                    <div class="html">
-                        <img src="imagenesPNG/js.png" alt="">
+                    <div class="conocimiento_img">
+                        <img src="imagenesPNG/javascript-script.png" alt="">
                     </div>
                 </div>
                 <div class="cont_conocimientos">
                     <h3>Bootstrap</h3>
-                    <div class="html">
+                    <div class="conocimiento_img">
                         <img src="imagenesPNG/bootstrap.png" alt="">
                     </div>
                 </div>
+                <div class="cont_conocimientos">
+                    <h3>Git</h3>
+                    <div class="conocimiento_img">
+                        <img src="imagenesPNG/Logo-de-Git.png" alt="">
+                    </div>
+                </div>
+                <div class="cont_conocimientos">
+                    <h3>GitHub</h3>
+                    <div class="conocimiento_img">
+                        <img src="imagenesPNG/github.png" alt="">
+                    </div>
+                </div>
             </div>
-            <!-- ------------------RELOJ----------------------- -->
-            <aside class="aside" id="tutoriales">
-                <h3 class="aside_tutorial">Tutoriales</h3>
-                <div class="python">
+            <!-- ------------------TUTORIALES----------------------- -->
+            <h2 class="h2">Tutoriales</h2>
+
+            <div class="tutoriales" id="tutoriales">
+                <div class="tutorial">
                   <h3>Crear Elementos en el DOM</h3> 
                   <p><a href="paginas/javascript/j-s.html">En este artículo veremos como insertar elementos en el DOM, así como eliminarlos.</a></p>               
                 </div>
-                <div class="python">
+                <div class="tutorial">
                   <h3>Porque aprender Python</h3> 
                   <p><a href="#"> ¿Deberías usar Python para crear páginas web?, ¿Cuándo debería usar Python para el desarrollo web? Encuentra las preguntas en nuestra guía de desarrollo web con Python</a></p>               
                 </div>
-                <div class="python">
+                <div class="tutorial">
                   <h3>Porque aprender Python</h3> 
                   <p><a href="#"> ¿Deberías usar Python para crear páginas web?, ¿Cuándo debería usar Python para el desarrollo web? Encuentra las preguntas en nuestra guía de desarrollo web con Python</a></p>               
                 </div>
-                <div class="python">
+                <div class="tutorial">
                   <h3>Porque aprender Python</h3> 
                   <p><a href="#"> ¿Deberías usar Python para crear páginas web?, ¿Cuándo debería usar Python para el desarrollo web? Encuentra las preguntas en nuestra guía de desarrollo web con Python</a></p>               
                 </div>
-                <div class="python">
+                <div class="tutorial">
                   <h3>Porque aprender Python</h3> 
                   <p><a href="#"> ¿Deberías usar Python para crear páginas web?, ¿Cuándo debería usar Python para el desarrollo web? Encuentra las preguntas en nuestra guía de desarrollo web con Python</a></p>               
                 </div>
-                <div class="python">
+                <div class="tutorial">
                   <h3>Porque aprender Python</h3> 
                   <p><a href="#"> ¿Deberías usar Python para crear páginas web?, ¿Cuándo debería usar Python para el desarrollo web? Encuentra las preguntas en nuestra guía de desarrollo web con Python</a></p>               
                 </div>
-                <div class="python">
+                <div class="tutorial">
                   <h3>Porque aprender Python</h3> 
                   <p><a href="#"> ¿Deberías usar Python para crear páginas web?, ¿Cuándo debería usar Python para el desarrollo web? Encuentra las preguntas en nuestra guía de desarrollo web con Python</a></p>               
                 </div>
-                <div class="python">
+                <div class="tutorial">
                   <h3>Porque aprender Python</h3> 
                   <p><a href="#"> ¿Deberías usar Python para crear páginas web?, ¿Cuándo debería usar Python para el desarrollo web? Encuentra las preguntas en nuestra guía de desarrollo web con Python</a></p>               
                 </div>
-            </aside>
-            <!-- *******************ANIMACIÓNES******************** -->
-<h2 class="anim_h2">Animaciónes con CSS</h2>
-<div class="contenedor_anim">
-    <div class="animacion_resorte">
-        <div class="animacion">
-          <a href="paginas/hobby/resorte/resorte.html"> <img src="imagenesPNG/resorte.png" alt=""></a>
-        </div>
-        <p>Esta animación es hecha solo con HTML y CSS, yo le llamo resorte por su figura puedes verlo
-            tu mismo dando click <a href="paginas/hobby/resorte/resorte.html">Aquí</a>  o en la imagen.
-        </p>
-    </div>
+            </div>
+            <!-- *******************SOBRE MI******************** -->
+<h2 class="h2">Sobre Mi</h2>
+<div class="contenedor_my">
+   <ul class="ul_sobre_mi">
+       <li><span>Soy Rolando Rivera.</span> 
+           <ul>
+               <li>Desarrollador web Frontend</li>
+               <li>Mas de 2 años de experiencia.</li>
+               <li>Freelance.</li>
+               <li>Pais Costa Rica.</li>
+               <li>Año de Nacimiento (1985).</li>
+               <li><a href="https://www.facebook.com/rolandoRivera85">Contacto
+                 <i class="fab fa-facebook"></i></a></li>
+           </ul>
+       </li>
+       
+   </ul>
 </div>
         </div>
  
