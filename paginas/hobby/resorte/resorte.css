@@ -198,34 +198,11 @@ animation: animate infinite ease-in-out 5s;
    border-radius: 10px;
 }
 /* **********************mediasQuery************* */
-
-@media (max-width:1200px){
-
-
-
-    .perf_text{
-        width: 80%;
-        /* background-color: bisque; */
-    }
-}
-@media(max-width:992px){
-    .perfil button{
-        font-size: 15px;
-        width: 150px;
-    }
- 
-}
-@media(max-width:768px){
-    .logo{
-        left:-30%
-    }
-  
-}
 @media(max-width:576px){
-   .nota{
-      width:100%
-   }
-    .argollas{
+    .nota{
+       width:100%
+    }
+   .argollas{
         width:170px;
         height:170px
     }
@@ -352,10 +329,4 @@ animation: animate infinite ease-in-out 5s;
         height:100%
     }
  
-}
-@media(max-width:300px){
-    .perf_text{
-        height:80px
-    }
-  
 }

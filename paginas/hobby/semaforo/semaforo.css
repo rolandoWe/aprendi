@@ -1,13 +1,13 @@
 .contenedor_bolas{
     width:500px;
     height: 300px;
-    /* background-color: darkorange; */
+    background-color: rgb(153, 152, 150);
     margin:10px auto;
 
 }
 .nota{
     background-color: rgb(255, 199, 44);
-    width:70%;
+    width:60%;
     /* height:100px; */
     margin:10px auto;
     padding: 5px;
@@ -72,4 +72,21 @@
 }
 .rojo{
     background-color: rgb(255, 0, 0);
+}
+/* ************************MEDIASQUERY************************* */
+
+
+@media(max-width:768px){
+    .nota{
+        width:100%
+    }
+    .contenedor_bolas{
+        width:90%
+    }
+  
+}
+@media(max-width:576px){
+.contenedor_bolas{
+    width:100%
+}
 }
