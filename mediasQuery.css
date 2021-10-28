@@ -107,17 +107,17 @@
 }
 @media(max-width:576px){
     .logo{
-        width: 100px;
-        height:80%;
+        width: 90px;
+        height:70%;
     }
     .logo_p{
-        font-size: 30px;
+        font-size: 25px;
     }
-.R,.W{
-    font-size: 30px;
+.R,.l{
+    font-size: 25px;
 }
 .comm{
-    font-size: 18px;
+    font-size: 15px;
 }
 
     .ul li, .ul ul{

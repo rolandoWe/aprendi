@@ -55,7 +55,7 @@ body{
     width: 100%;
     height:30px
 }
-.R,.W{
+.R,.l{
     color: rgb(0, 0, 0);
     width: 10px;
     font-size: 35px;
@@ -86,74 +86,117 @@ body{
     right:-5%;
     transition: .5s;
 }
-.ul ul{
+.sub_ul{
     /* background-color: rgb(0, 0, 90); */
-    display: none;
+    /* display: none; */
     position: absolute;
+    width:200px;
+    height:0px;
+    overflow: hidden;
+    padding: 0 5px;
     top: 30px;
     left: 0;
-    border-bottom: solid transparent 2px;
-    border-bottom-style:groove;
+    /* border-bottom: solid transparent 2px; */
+    /* border-bottom-style:groove; */
     transition: .5s;
     border-radius: 5px;
     z-index: 100;
 }
-.ul ul li{
-    background-color: rgb(0, 125, 160);
-    margin:0px -39px;
-    padding: 0 5px;
-    transition: .5s;
+.sub_ul li{
+    margin: 5px 0;
+    border-radius: 5px;
+}
+.sub_ul li a{
+text-align: left;
+/* background-color: bisque; */
+margin-left: 0px;
+padding: 0 4px;
 }
 .ul li{
     list-style: none;
     border-radius: 5px;
+    background-color: rgb(0, 0, 0);
 }
+.ul li a{
+    color: white;
+
+}
+.ul li:hover{
+    background-color: rgb(0, 50, 150);
+}
+.li:hover .sub_ul{
+    height:200px
+} 
 .close{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 0, 0);
     width: 30px;
     height: 30px;
     border-radius: 50%;
+    border:solid transparent 1px;
     text-align: center;
     line-height: 30px;
     font-size: 20px;
     font-weight: bold;
-    background: rgb(235, 1, 1);
+    background: rgb(1, 13, 150);
+    box-shadow: -2px -2px 5px var(--ab),inset 2px 2px 5px var(--aoc),
+    inset -2px -2px 5px var(--ab), 2px 2px 5px var(--aoc);
     display: none;
+    position: absolute;
+    margin-top:10px;
+    margin-right:20px
 }
-.ul>li{
+.li{
     height:30px;
-    padding: 0 15px;
+    width:150px;
+    /* padding: 0 15px; */
     line-height: 30px;
-    list-style: none;
-    border-bottom: solid transparent 2px;
-    border-bottom-style:groove;
+    position: relative;
+    /* list-style: none; */
+    /* border-bottom: solid transparent 2px; */
+    /* background-color: bisque; */
+    /* border-bottom-style:groove; */
     transition: .8s;
  
+}
+:root{
+    --az:rgb(0,50,150);
+    --ab:rgb(6, 89, 255);
+    --aoc:rgb(1, 26, 78);
+}
+.li>a{
+    background-color: var(--az);
+    width:100%;
+    height:100%;
+    border-radius: 5px;
+    box-shadow: -2px -2px 5px var(--ab),inset 5px 5px 5px var(--aoc),
+    inset -2px -2px 5px var(--ab), 2px 2px 5px var(--aoc);
+    /* display:block; */
+    transition: .5s;
+}
+.li>a:hover{
+    transform: scale(.9);
 }
 .icono{
     width:20px;
     margin-left:10px ;
 }
-.ul>li{
+/* .ul>li{
     position: relative;
-}
-.ul li:hover{
+} */
+/* .ul li:hover{
     border-bottom: solid rgb(255, 255, 255) 2px;
-}
-.ul>li:hover ul{
+} */
+/* .ul>li:hover ul{
     display: block;
-}
-.ul li a{
+} */
+.ul a{
     height: 100%;
     display: block;
     text-align: center;
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
-    color: white;
-}
-.ul ul a{
-    text-align: left;
+    color: rgb(0, 0, 0);
 }
 .menu{
     width:30px;

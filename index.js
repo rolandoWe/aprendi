@@ -32,17 +32,14 @@ cerrar.addEventListener("click",function(){
 })
 
 ul.addEventListener("click",function(u){
-    // if(u.target.className=="cx"){
-    //     ul.classList.toggle("mostrar_ul");
-    //     menu.style.display="block"  
-    // }
+
     cerr(u.target)
 
 })
 function cerr(c){
     if(c.className=="cx"){
         ul.classList.toggle("mostrar_ul");
-        // menu.style.display="block"
+        menu.style.display="block"
     }
 }
 
