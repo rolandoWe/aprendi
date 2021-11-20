@@ -1,24 +1,32 @@
 
 *{
-    /* padding: 0; */
-    max-width: 1200px;
+    max-width: 1100px;
     margin: 0 auto;
     box-sizing: border-box;
 }
 body{
     width:100%;
 }
+:root{
+    --negro:rgb(13, 13, 14);
+    --gris:rgb(41, 41, 41);
+    --azul:rgb(0, 26, 226);
+    --blanco:rgb(238, 238, 238);
+    --naranja:rgb(255, 117, 3);
+}
 .contenedor{
-    /* background: rgb(221, 183, 183); */
+    background-image: linear-gradient( rgb(0, 0, 0)0%, rgb(221, 219, 219)10%,
+     rgb(238, 238, 238)100%);
     width:100%;
     overflow: hidden;
     transition: .5s;
+    padding: 1px 0;
 }
 .main{
     width:100%;
     height:60px;
-    background: rgb(0, 50, 150);
-    border-bottom:double 4px rgb(255, 255, 255);
+    background:black;
+    /* border-bottom:double 4px rgb(255, 255, 255); */
     display: flex;
     align-items: center;
     position: fixed;
@@ -39,19 +47,24 @@ body{
     justify-content: space-between;
 }
 .logo{
-    width:130px;
+    width:150px;
     height:100%;
     position: relative;
+    /* border:solid white 2px; */
+    padding: 5px 0;
     left:-5%;
     border-radius: 10px;
+    /* background: black; */
+
 }
 .logo_p{
-    color: rgb(0, 0, 0,.9);
+    color: rgb(2, 11, 255);
     font-size: 35px;
     font-weight: bold;
     font-family:"Quantico";
     line-height: 35px;
-    text-shadow: 1px 1px  rgb(255, 255, 255);
+    text-shadow: 0px 0px 2px  white;
+    text-align: center;
     width: 100%;
     height:30px
 }
@@ -61,7 +74,7 @@ body{
     font-size: 35px;
     margin: 0;
     padding-left: -5px;
-    text-shadow: 0 0 2px rgb(255, 255, 255);
+    text-shadow: 0 0 2px white;
     font-family: 'Playball', cursive;
 }
 .comm{
@@ -72,7 +85,7 @@ body{
     text-align: right;
     font-weight: bold;
     color: white;
-    text-shadow: 1px 1px 2px rgb(2, 2, 83);
+    /* text-shadow: 1px 1px 2px var(--na); */
     font-family:"Quantico";
 }
 .ul{
@@ -80,14 +93,13 @@ body{
     height:100%;
     display: flex;
     position: relative;
-
     align-items: center;
     justify-content: space-between;
     right:-5%;
     transition: .5s;
 }
 .sub_ul{
-    /* background-color: rgb(0, 0, 90); */
+    background-color: rgb(5, 67, 255);
     /* display: none; */
     position: absolute;
     width:200px;
@@ -115,17 +127,18 @@ padding: 0 4px;
 .ul li{
     list-style: none;
     border-radius: 5px;
-    background-color: rgb(0, 0, 0);
+    /* background-color: var(--naranja); */
 }
 .ul li a{
-    color: white;
+    color: var(--blanco);
+    font-size: 18px;
 
 }
 .ul li:hover{
     background-color: rgb(0, 50, 150);
 }
 .li:hover .sub_ul{
-    height:200px
+    height:180px
 } 
 .close{
     color: rgb(255, 0, 0);
@@ -158,13 +171,9 @@ padding: 0 4px;
     transition: .8s;
  
 }
-:root{
-    --az:rgb(0,50,150);
-    --ab:rgb(6, 89, 255);
-    --aoc:rgb(1, 26, 78);
-}
+
 .li>a{
-    background-color: var(--az);
+    background-color: var(--f2);
     width:100%;
     height:100%;
     border-radius: 5px;
@@ -180,15 +189,6 @@ padding: 0 4px;
     width:20px;
     margin-left:10px ;
 }
-/* .ul>li{
-    position: relative;
-} */
-/* .ul li:hover{
-    border-bottom: solid rgb(255, 255, 255) 2px;
-} */
-/* .ul>li:hover ul{
-    display: block;
-} */
 .ul a{
     height: 100%;
     display: block;
@@ -214,8 +214,9 @@ transition: .5s;
     width:100%;
     height: 50vh;
     box-sizing: border-box;
-    margin:20px auto;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7)0%,rgba(0, 0, 0, 0.7)100%),
+    margin:10px auto;
+    background-image: linear-gradient(to right,rgba(0, 0, 0, 0.7)0%,rgba(0, 0, 0)50%,
+    rgba(0, 0, 0)100%),
     url(imagenesPNG/DesarrolloSoftware.png);
     background-position: center;
     background-size:cover;
@@ -233,11 +234,11 @@ transition: .5s;
     bottom: 0;
 }
 .perfil_img{
-    width:200px;
-    height:190px;
+    width:250px;
+    height:200px;
     overflow: hidden;
-    border-radius: 50%;
-    box-shadow: 0px 0px 4px rgb(0, 50, 250);
+    border-radius: 5px;
+    /* box-shadow: 0px 0px 4px rgb(0, 50, 250); */
 }
 .perfil_img img{
     width:100%;
@@ -254,18 +255,17 @@ transition: .5s;
 }
 .perf_text h2{
     width:100%;
-    font-size: 40px;
-    color: white;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
     font-weight: bold;
-}
-.perf_text h2 span{
-    color: rgb(0, 42, 255);
-    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+    text-shadow: 0 0 2px rgb(255, 255, 255);
+
 }
 .perf_text p{
-    font-size: 30px;
+    font-size: 20px;
     width:100%;
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255,.7);
+    text-shadow: 0 0 2px white;
 }
 /* *****************************************cuerpo***************************** */
 .cont_cuerpo{
@@ -273,18 +273,23 @@ transition: .5s;
     padding: 5px 0;
     margin: 10px auto;
 }
-.cuerpo_h2 i{
-    color:rgb(0, 50, 250);
-    padding-left: 40px;
+.hh2{
+    color:rgb(255, 255, 255);
+    background: rgb(44, 44, 44);
+    padding: 20px 30px;
 }
-/* ********************************servicios************************* */
+.hh2 i{
+    color:blue;
+    padding-left: 30px;
+}
+/* ********************************Proyectos************************* */
 .cuerpo_proyecto{
     width:100%;
     display: flex;
     margin: 15px 0;
     flex-wrap: wrap;
 }
-.proyecto_uno{
+.proyectos{
     width: 200px;
     height:350px;
     /* background: bisque; */
@@ -292,9 +297,10 @@ transition: .5s;
     padding: 5px;
     border-radius: 5px;
 }
+
 .calc_img{
     width:100%;
-    height:60%;
+    height:50%;
     overflow: hidden;
 }
 .calc_img img{
@@ -302,13 +308,13 @@ transition: .5s;
     height:100%
 }
 
-.proyecto_uno h3{
+.proyectos h3{
     font-size: 20px;
     text-align: center;
     font-weight: bold;
     margin-bottom: 10px;
 }
-.proyecto_uno button{
+.proyectos button{
     font-weight: bold;
     text-align: center;
     background: rgba(0, 0, 0);
@@ -316,15 +322,51 @@ transition: .5s;
     border:none;
     transition: .5s;
 }
-.proyecto_uno button:hover{
+.proyectos button:hover{
     background: rgb(32, 32, 32);
     transform: scale(1.1);
 }
-.proyecto_uno a{
+.proyectos a{
     font-size: 15px;
     color: rgb(255, 255, 255);
     font-weight: bold;
     text-decoration: none;
+}
+.y-t{
+    background-color: rgb(194, 190, 190);
+    /* width:100%; */
+    display: inline-block;
+    padding: 5px ;
+    margin: 5px;
+}
+.y-t i{
+    color:red
+}
+.y-t a{
+    color:rgb(243, 2, 2);
+    font-size: 20px;
+    text-shadow: 0 0 5px white;
+}
+.cont_digitos{
+    width:90%;
+    /* height:400px; */
+    /* border:solid black 1px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.digitos{
+    width:90%;
+    /* height:90%; */
+    text-align: center;
+    font-size: 20px;
+    background-color: black;
+    font-weight: bold;
+    padding: 5px 0;
+}
+@keyframes animar{
+    0%{color:chartreuse}
+    100%{color:rgb(31, 59, 2)}
 }
 /* **********************************CONOCIMIENTOS************************* */
 .conocimientos{

@@ -35,6 +35,7 @@
         transform: translatex(-200%);
         transition: .5s;
         box-sizing: border-box;
+        z-index: 100
     } 
     /* .ul ul{
         background-color: transparent;
@@ -116,9 +117,6 @@
 .R,.l{
     font-size: 25px;
 }
-.comm{
-    font-size: 15px;
-}
 
     .ul li, .ul ul{
         width:90%
@@ -183,7 +181,13 @@ text-decoration: underline;
     .animacion_resorte{
         flex-direction: column;
     }
-    
+    .fecha{
+        font-size: 15px;
+    }
+    .digitos{
+        width:100%;
+        font-size: 10px;
+    }
     .copy p{
         font-size: 15px;
     }

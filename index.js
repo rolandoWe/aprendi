@@ -20,28 +20,39 @@ function scroll(){
 let menu=document.querySelector(".menu");
 let cerrar=document.querySelector(".close");
 let ul=document.querySelector(".ul");
-let cx=document.querySelector(".cx");
+let cx=document.querySelectorAll(".cx");
 
 menu.addEventListener("click",function(){
     ul.classList.toggle("mostrar_ul");
-    menu.style.display="none"
+    // menu.style.display="none"
 });
 cerrar.addEventListener("click",function(){
     ul.classList.toggle("mostrar_ul");
-    menu.style.display="block"
+    // menu.style.display="block"
 })
 
-ul.addEventListener("click",function(u){
-
-    cerr(u.target)
-
+cx.forEach(x =>{
+    x.addEventListener("click",function(){
+        ul.classList.toggle("mostrar_ul")
+    })
 })
-function cerr(c){
-    if(c.className=="cx"){
-        ul.classList.toggle("mostrar_ul");
-        menu.style.display="block"
+
+// ******************************Contenedor Digitos javascript*******************************
+let numeros="";
+[15].forEach(d=>{
+    Array(d).fill("").forEach((x,g)=>{
+        numeros+=([...Array(15).fill("<span class='numero'> 0 1 </span>")].join(""))+"<br>"
+    })
+})
+document.querySelector(".digitos").innerHTML=numeros
+
+let numero=document.querySelectorAll(".numero")
+
+function anim(){
+    for(let n=0;n<numero.length;n++){
+        let t=[n]/50+1;
+        numero[n].style.animation="animar "+ t+"s infinite"
     }
 }
-
-
+window.addEventListener("load",anim)
 
