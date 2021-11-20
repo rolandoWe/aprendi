@@ -1,0 +1,29 @@
+
+.cont_arbol{
+    width:100%;
+    border:solid black 1px;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.arbol{
+    width:100%;
+    height:400px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+.star{
+    width:100%;
+    height:30px;
+    font-size: 40px;
+    text-align: center;
+}
+@keyframes colores{
+    0%{color:rgb(170, 255, 0)}
+    30%{color:rgb(255, 255, 255)}
+    60%{color:rgb(255, 0, 0)}
+    100%{color:rgb(13, 85, 0)}
+}
