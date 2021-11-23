@@ -20,22 +20,31 @@ function scroll(){
 let menu=document.querySelector(".menu");
 let cerrar=document.querySelector(".close");
 let ul=document.querySelector(".ul");
-let cx=document.querySelectorAll(".cx");
+// let cx=document.querySelectorAll(".cx");
 
 menu.addEventListener("click",function(){
     ul.classList.toggle("mostrar_ul");
     // menu.style.display="none"
 });
-cerrar.addEventListener("click",function(){
+// cerrar.addEventListener("click",function(){
+//     ul.classList.toggle("mostrar_ul");
+// })
+ul.addEventListener("click",function(u){
+ocultar(u.target)
+console.log(u.target)
+})
+function ocultar(x){
+if(x.className!=="ul"){
     ul.classList.toggle("mostrar_ul");
-    // menu.style.display="block"
-})
 
-cx.forEach(x =>{
-    x.addEventListener("click",function(){
-        ul.classList.toggle("mostrar_ul")
-    })
-})
+}
+}
+
+// cx.forEach(x =>{
+//     x.addEventListener("click",function(){
+//         ul.classList.toggle("mostrar_ul")
+//     })
+// })
 
 // ******************************Contenedor Digitos javascript*******************************
 let numeros="";
