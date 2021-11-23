@@ -39,9 +39,9 @@ cx.forEach(x =>{
 
 // ******************************Contenedor Digitos javascript*******************************
 let numeros="";
-[15].forEach(d=>{
+[10].forEach(d=>{
     Array(d).fill("").forEach((x,g)=>{
-        numeros+=([...Array(15).fill("<span class='numero'> 0 1 </span>")].join(""))+"<br>"
+        numeros+=([...Array(20).fill("<span class='numero'> 0 1 </span>")].join(""))+"<br>"
     })
 })
 document.querySelector(".digitos").innerHTML=numeros
@@ -55,4 +55,15 @@ function anim(){
     }
 }
 window.addEventListener("load",anim)
+
+// ****************************para sobre mi*****************************
+let btn_my=document.querySelector(".sobre_my_btn")
+
+btn_my.addEventListener("click",function(){
+    document.querySelector(".ms_my").classList.toggle("ver_ms");
+    setTimeout(function(){
+        document.querySelector(".ms_my").classList.remove("ver_ms")
+    
+    },5000)
+})
 
