@@ -20,15 +20,11 @@ function scroll(){
 let menu=document.querySelector(".menu");
 let cerrar=document.querySelector(".close");
 let ul=document.querySelector(".ul");
-// let cx=document.querySelectorAll(".cx");
 
 menu.addEventListener("click",function(){
     ul.classList.toggle("mostrar_ul");
-    // menu.style.display="none"
 });
-// cerrar.addEventListener("click",function(){
-//     ul.classList.toggle("mostrar_ul");
-// })
+
 ul.addEventListener("click",function(u){
 ocultar(u.target)
 console.log(u.target)
@@ -39,12 +35,6 @@ if(x.className!=="ul"){
 
 }
 }
-
-// cx.forEach(x =>{
-//     x.addEventListener("click",function(){
-//         ul.classList.toggle("mostrar_ul")
-//     })
-// })
 
 // ******************************Contenedor Digitos javascript*******************************
 let numeros="";
@@ -75,4 +65,45 @@ btn_my.addEventListener("click",function(){
     
     },5000)
 })
+
+
+// *************************colores aleatorios*************************************
+let caja_color=document.querySelector(".color");
+let parrafo_rgb=document.querySelector(".color_rgb");
+let btn_rgb=document.querySelector(".color_btn");
+
+function colorP(){
+    let rr=Math.floor(Math.random()*256);
+    let gg=Math.floor(Math.random()*256);
+    let bb=Math.floor(Math.random()*256);
+
+    let nc=`rgb(${rr} ${gg} ${bb})`;
+    parrafo_rgb.style.background=nc;
+}
+function colorb(){
+    let rr=Math.floor(Math.random()*256);
+    let gg=Math.floor(Math.random()*256);
+    let bb=Math.floor(Math.random()*256);
+
+    let nb=`rgb(${rr} ${gg} ${bb})`;
+    btn_rgb.style.background=nb;
+
+}
+
+function colores(){
+    let r=Math.floor(Math.random()*256);
+    let g=Math.floor(Math.random()*256);
+    let b=Math.floor(Math.random()*256);
+
+    let col=`rgb(${r} ${g} ${b})`;
+    caja_color.style.background=col
+    parrafo_rgb.innerHTML="Fondo de la caja: "+col;
+    colorP()
+    colorb()
+}
+btn_rgb.addEventListener("click",function(){
+colores()
+    
+})
+setInterval(colores,5000)
 
