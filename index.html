@@ -5,28 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>rolando</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
-    </style> 
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
     <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet"> 
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
     <link href="https://fonts.googleapis.com/css2?family=Quantico:ital@1&display=swap" rel="stylesheet">
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
     <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@200&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
 
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
  rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
  crossorigin="anonymous">
 
+<link rel="stylesheet" href="paginas/hobby/resorte/resorte.css">
+ <link rel="stylesheet" href="paginas/arbolito/arbol.css">
+
     <link rel="stylesheet" href="index.css?v">
     <!-- <link rel="stylesheet" href="reloj.css"> -->
     <!-- <link rel="stylesheet" href="paginas/hobby/papalote/css/papalote.css"> -->
+
     <link rel="stylesheet" href="mediasQuery.css?v">
 </head>
 <body>
@@ -34,7 +31,7 @@
         <main class="main">
           <nav class="nav ">
               <div class="logo">
-                  <p class="logo_p">Rolando</p>
+                  <p class="logo_p">Rola<span>.com</span></p>
               </div>
               <ul class="ul">
                   <span class="close">X</span>
@@ -78,12 +75,17 @@
         <!-- --------------------------CUERPO------------------------ -->
         <div class="cont_cuerpo">
 
-            <h2 class="h2" id="proyectos">Mis Proyectos <i class="fas fa-project-diagram"></i></h2>
+            <h2 class="h2" id="proyectos">Mis Proyectos</h2>
             <!-- ------------------------------servicios------------------------- -->
             <div class="cuerpo_proyecto">
                     <div class="proyectos">
-                       <div class="calc_img">
-                           <img src="imagenesPNG/arbol_navidad.png" alt="">
+                       <div class="calc_img proyectos_arbol">
+                         <div class="cont_arbol proy_arb">
+                            <p class="star estrella">*</p>
+                
+                            <div class="arbol arb">
+                            </div>
+                        </div>
                        </div>
                        <h3>Arbol de Navidad hecho con HTML, CSS y Javascript.</h3>
                        <button type="button" class=""><a href="paginas/arbolito/arbolito.html">Ver</a> </button>
@@ -107,8 +109,24 @@
                        <button type="button" class=""><a href="https://github.com/rolandoWe/calculadora"> Ver Codigo</a></button>
                     </div>
                     <div class="proyectos">
-                       <div class="calc_img">
-                           <img src="imagenesPNG/resorte2.png" alt="">
+                       <div class="calc_img proyectos_argollas">
+                        <div class="argollas">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                        </div>
                        <h3>Resorte con HTML, CSS y Javascript.</h3>
                        <button type="button" class=""><a href="paginas/hobby/resorte/resorte.html">Ver</a> </button>
@@ -148,10 +166,12 @@
                         <p class="color_p netf_p"><a href="https://rolandowe.github.io/lista_productos/">Lista de productos.</a></p>
                     </div>
 
-
+             <div class="ver_mas">
+                 <button type="button">ver mas</button>
+             </div>
             </div>
-            <!-- -------------------------------CONOCIMIENTOS------------------------ -->
-            <h2 class="h2" id="tecnologias">Tecnologías <i class="fas fa-laptop"></i></h2>
+            <!-- -------------------------------tecnologias------------------------ -->
+            <h2 class="h2" id="tecnologias">Tecnologías</h2>
             <div class="conocimientos">
                 <div class="cont_conocimientos">
                     <h3>HTML</h3>
@@ -224,7 +244,7 @@
        <li><span>Rolando Rivera.</span> 
            <ul>
                <li>Desarrollador Frontend</li>
-               <li>Mas de 2 años de experiencia.</li>
+               <li>Nivel (Junior).</li>
                <li>Freelance.</li>
                <li>Pais Costa Rica.</li>
                <li>Año de Nacimiento (1985).</li>
@@ -242,8 +262,8 @@
         </div>
         <div class="my_boton">
             <button type="button" class="sobre_my_btn">Más sobre mí</button>
-        <p class="ms_my">Aun no hay nada para mostrar....</p>
-           </div>
+            <p class="ms_my">Aun no hay nada para mostrar....</p>
+        </div>
  
     <footer class="footer" id="footer">
       <div class="copy">
@@ -255,6 +275,7 @@
     </footer>
     </div>
     <script src="index.js"></script>
+    <script src="paginas/arbolito/arbol.js"></script>
     <script src="https://kit.fontawesome.com/f7f35171d9.js" crossorigin="anonymous"></script>
 
 </body>

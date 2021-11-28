@@ -141,15 +141,22 @@ text-decoration: underline;
 
     }
     .proyectos{
-        width:150px;
+        width:200px;
+        height:300px;
+        border: solid blue 1px;
         margin:5px auto;
-        padding:5px 0
+        /* padding:5px 0 */
     }
+  
     .tutoriales{
         width:90%
     }
     .calc_img{
-        height:100px
+        height:180px
+    }
+    .proyectos_arbol{
+        height:160px;
+        border:solid red 1px
     }
     .caja_reloj{
         width:350px;
