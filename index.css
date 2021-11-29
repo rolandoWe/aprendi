@@ -230,6 +230,7 @@ linear-gradient(to top,rgba(0, 0, 0, .2)10%,rgba(0, 0, 0, 0.9)50%,rgba(0, 0, 0, 
 }
 .proyectos{
     width: 200px;
+    /* min-width: 200px; */
     height:350px;
     /* background: bisque; */
     margin: 5px auto;
