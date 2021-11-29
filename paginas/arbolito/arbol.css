@@ -2,6 +2,7 @@
 .cont_arbol{
     width:100%;
     border:solid black 1px;
+    padding-top: 60px;
     background: black;
     display: flex;
     flex-direction: column;
@@ -10,7 +11,7 @@
 }
 .arbol{
     width:100%;
-    height:400px;
+    height:450px;
     text-align: center;
     font-weight: bold;
     font-size: 15px;
